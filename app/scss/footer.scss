@@ -1,0 +1,24 @@
+@import "variable";
+
+footer#footer {
+  border-top: 1px solid $secondary-color;
+  background: $main-color;
+  overflow-x: hidden;
+  .footer__title {
+    color: $secondary-color;
+    font-size: $size-large;
+    font-weight: bold;
+  }
+
+  p {
+    span {
+      font-size: $size-small;
+    }
+  }
+  .footer_bottom {
+    font-size: $size-small;;
+    .footer_bottom--menu{
+      text-align: right;
+    }
+  }
+}

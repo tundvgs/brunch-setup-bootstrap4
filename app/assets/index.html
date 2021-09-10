@@ -1,19 +1,1058 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Brunch</title>
-  <link rel="stylesheet" href="/app.css">
-  <script src="/vendor.js"></script>
-  <script src="/app.js"></script>
-  <script>require('index');</script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Brunch</title>
+    <link rel="stylesheet" href="/app.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+    <!--    <script src="https://kit.fontawesome.com/55dd006080.js" crossorigin="anonymous"></script>-->
+    <!--    <link rel="stylesheet"-->
+    <!--          href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.carousel.min.css">-->
+    <!--    <link rel="stylesheet"-->
+    <!--          href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.theme.default.min.css">-->
+    <script src="/vendor.js"></script>
+    <script src="/app.js"></script>
+    <script>require('app/assets/index');</script>
+    <!--    <script src="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/owl.carousel.js"></script>-->
+    <!--    <link href="https://allfont.net/allfont.css?fonts=roboto-medium" rel="stylesheet" type="text/css"/>-->
+
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="/package/slick.css"/>
+    <!--    <link rel="stylesheet" type="text/css" href="/package/slick-theme.css"/>-->
+    <script type="text/javascript" src="/package/slick.min.js"></script>
+
 </head>
 <body>
-  <div class="brunch">
-    <a href="http://brunch.io"><img src="http://brunch.io/images/logo.png" alt="Brunch"></a>
-    <p>Bon Appétit.</p>
-    <p>...with Bootstrap 4 :)</p>
-    <a class="btn btn-primary" href="">Example Button Primary</a>
-    <a class="btn btn-dark" href="">Example Button Custom Class</a>
-  </div>
+<header>
+    <div class="container pt-2 pb-2">
+        <div class="row justify-content-between align-items-center">
+            <div class="col">
+                <a href="#" class="d-inline-block">
+                    <img src="https://s3-alpha-sig.figma.com/img/96d4/e615/954a6b4cd1463c4485e5b0b9a05b17b2?Expires=1631491200&Signature=Jexsa9DfH5UswODNyvWU6grj~4yckIyLUMigyt--SBLDPvOqj21-0WHtU~80bfi4Yfl0HIpqFJXW11lTVmXOXrphvQ7trzECIA~AW6smnPogosY51aAQ2G8yGSNzvnlelriHLnm6u1TSpc8uJa~A2g8KZMIyVr4n96Wz53rbVS29wvN6PSqPa8C7gT2-Mu8iKXLZCYBFIUjPxhlgHi8J2pdrfmv7yjAf0KDrGYh82MAgHuPH-Kpd1bKksCK~4hRU38UDpqBm04~yhmkpx9BjK03S8fq7c9uQwjGprBhNaKPJw8mQN0j06Pd8G0GxJwaQaZLk25HWPupGI0ORfFu7fQ__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"
+                         alt="" width="150px">
+                </a>
+            </div>
+            <div class="col ">
+                <form action="#" class="searchform order-sm-start order-lg-last ">
+                    <div class="form-group d-flex  ">
+                        <input type="text" class="form-control pl-3" placeholder="Search">
+                        <button type="submit" placeholder="" class="form-control search"><span
+                                class="fa fa-search"></span></button>
+                    </div>
+                </form>
+            </div>
+            <div class="col d-flex justify-content-end">
+                <div class="social-media">
+                    text
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg  navbar-dark  justify-content-between nav-secondary pt-0 pb-0">
+        <div class="container">
+            <button class="navbar-toggler mt-2 mb-2 " type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarsExample08"
+                    aria-controls="navbarsExample08" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample08">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Trang chủ</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdown08" data-bs-toggle="dropdown"
+                           aria-expanded="false">Tour golf quốc tế</a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdown08">
+                            <li>
+                                <a class="dropdown-item" href="#">Action</a>
+                                <ul class="submenu dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Submenu item 1</a></li>
+                                    <li><a class="dropdown-item" href="#">Submenu item 2</a></li>
+                                    <li><a class="dropdown-item" href="#">Submenu item 3 &raquo; </a>
+                                        <ul class="submenu dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Multi level 1</a></li>
+                                            <li><a class="dropdown-item" href="#">Multi level 2</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Submenu item 4</a></li>
+                                    <li><a class="dropdown-item" href="#">Submenu item 5</a></li>
+                                </ul>
+                            </li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">evga tour</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link " href="#">kinh nghiệm và trải nghiệm</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link " href="#">về chúng tôi</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<section id="headers">
+    <section class="slick-carousel-slider  ">
+        <div class="css-1t7eqdv">
+            <div class="css-1n7wqvg">
+                <span class="text css-gcc11p">2 million accommodations</span>
+                <span class="text css-1b6fs5z">Best prices, Free cancellation<br>2% Cashback, 2 Shopping Points*</span>
+                <div class="css-1baj6ir">
+                    <a class="" href="#test_id=section_topRecommendedProperties">
+                        <div class="css-1izq7si">Book now</div>
+                    </a>
+                </div>
+                <span class="text css-1pjpt3w">*on the full booking price!</span>
+            </div>
+            <div class="css-a6wuni">
+                <img class="css-53j7fx"
+                     src="https://res.cloudinary.com/roombonus/image/upload/v1625487112/production/FirstPage/banner_desktop_1.png">
+            </div>
+        </div>
+        <div class="css-1t7eqdv">
+            <div class="css-1n7wqvg"><span class="text css-gcc11p">Become part of our world</span><span
+                    class="text css-1b6fs5z">The best hotels at the best prices including Cashback and Shopping Points</span>
+                <div class="css-1baj6ir"><a class="css-rlwou3" href="/whytoregister" target="_self">
+                    <div class="css-1izq7si">Find out more</div>
+                </a></div>
+            </div>
+            <div class="css-a6wuni"><img class="css-53j7fx"
+                                         src="https://res.cloudinary.com/roombonus/image/upload/v1587380165/production/FirstPage/tw_img_hero1.jpg">
+            </div>
+        </div>
+        <div class="css-1t7eqdv">
+            <div class="css-1n7wqvg"><span
+                    class="text css-gcc11p">2 million accommodations<br>All myWorld advantages</span><span
+                    class="text css-1b6fs5z">Redeem Cashback and Shopping Points<br>Save an extra 15% on Shopping Point Deals</span>
+                <div class="css-1baj6ir"><a class="" href="#test_id=section_topRecommendedProperties">
+                    <div class="css-1izq7si">Book now</div>
+                </a></div>
+            </div>
+            <div class="css-a6wuni"><img class="css-53j7fx"
+                                         src="https://res.cloudinary.com/roombonus/image/upload/v1625478328/production/FirstPage/banner_desktop_2.png">
+            </div>
+        </div>
+    </section>
+</section>
+
+
+<section id="main">
+    <section class="container">
+        <section class="block-content first">
+            <section class="block-content__head">
+                <h1 class="block-content__head-title">travelWorld Summer Deals</h1>
+                <span class="block-content__head-title">Book your holiday now safe and carefree – including free cancellation!</span>
+            </section>
+            <section class="block-content__content-first">
+                <div class="slick-carousel">
+                    <div class="block-content__content-first-item">
+                        <div class="card">
+                            <div class="block-content-first-item__content__image">
+                                <img class="card-img-top "
+                                     src="https://api.travelworld.com/proxy/image?src=https://i.travelapi.com/hotels/3000000/2170000/2161600/2161561/4b6a6d57_z.jpg"
+                                     alt="Card image cap">
+                            </div>
+                            <div class="card-body block-content-first-item__content__body" data-class="equal-height">
+                                <h5 class="card-title block-content-first-item__content__body-title p-0 m-0">One Resort
+                                    Aqua
+                                    Park & Spa </h5>
+                                <p class="card-text block-content-first-item__content__body-description p-0 m-0">
+                                    Monastir,
+                                    Tunisia</p>
+                                <span class="card-text block-content-first-item__content__body-price p-0 m-0">from € 83</span>
+                            </div>
+                            <div class="card-body  block-content-first-item__content__cashback">
+                                <span class="text ">2% Cashback + 2</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block-content__content-first-item">
+                        <div class="card">
+                            <div class="block-content-first-item__content__image">
+                                <img class="card-img-top "
+                                     src="https://api.travelworld.com/proxy/image?src=https://i.travelapi.com/hotels/3000000/2170000/2161600/2161561/4b6a6d57_z.jpg"
+                                     alt="Card image cap">
+                            </div>
+                            <div class="card-body block-content-first-item__content__body" data-class="equal-height">
+                                <h5 class="card-title block-content-first-item__content__body-title p-0 m-0">One Resort
+                                    Aqua
+                                    Park & Spa </h5>
+                                <span class="card-text block-content-first-item__content__body-price p-0 m-0">from € 83</span>
+                            </div>
+                            <div class="card-body  block-content-first-item__content__cashback">
+                                <span class="text ">2% Cashback + 2</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block-content__content-first-item">
+                        <div class="card">
+                            <div class="block-content-first-item__content__image">
+                                <img class="card-img-top "
+                                     src="https://api.travelworld.com/proxy/image?src=https://i.travelapi.com/hotels/3000000/2170000/2161600/2161561/4b6a6d57_z.jpg"
+                                     alt="Card image cap">
+                            </div>
+                            <div class="card-body block-content-first-item__content__body" data-class="equal-height">
+                                <h5 class="card-title block-content-first-item__content__body-title p-0 m-0">One Resort
+                                    Aqua
+                                    Park & Spa </h5>
+                                <span class="card-text block-content-first-item__content__body-price p-0 m-0">from € 83</span>
+                            </div>
+                            <div class="card-body  block-content-first-item__content__cashback">
+                                <span class="text ">2% Cashback + 2</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block-content__content-first-item">
+                        <div class="card">
+                            <div class="block-content-first-item__content__image">
+                                <img class="card-img-top "
+                                     src="https://api.travelworld.com/proxy/image?src=https://i.travelapi.com/hotels/3000000/2170000/2161600/2161561/4b6a6d57_z.jpg"
+                                     alt="Card image cap">
+                            </div>
+                            <div class="card-body block-content-first-item__content__body" data-class="equal-height">
+                                <h5 class="card-title block-content-first-item__content__body-title p-0 m-0">One Resort
+                                    Aqua
+                                    Park & Spa </h5>
+                                <p class="card-text block-content-first-item__content__body-description p-0 m-0">
+                                    Monastir,
+                                    Tunisia</p>
+                                <span class="card-text block-content-first-item__content__body-price p-0 m-0">from € 83</span>
+                            </div>
+                            <div class="card-body  block-content-first-item__content__cashback">
+                                <span class="text ">2% Cashback + 2</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block-content__content-first-item">
+                        <div class="card">
+                            <div class="block-content-first-item__content__image">
+                                <img class="card-img-top "
+                                     src="https://api.travelworld.com/proxy/image?src=https://i.travelapi.com/hotels/3000000/2170000/2161600/2161561/4b6a6d57_z.jpg"
+                                     alt="Card image cap">
+                            </div>
+                            <div class="card-body block-content-first-item__content__body" data-class="equal-height">
+                                <h5 class="card-title block-content-first-item__content__body-title p-0 m-0">One Resort
+                                    Aqua
+                                    Park & Spa </h5>
+                                <p class="card-text block-content-first-item__content__body-description p-0 m-0">
+                                    Monastir,
+                                    Tunisia</p>
+                                <span class="card-text block-content-first-item__content__body-price p-0 m-0">from € 83</span>
+                            </div>
+                            <div class="card-body  block-content-first-item__content__cashback">
+                                <span class="text ">2% Cashback + 2</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block-content__content-first-item">
+                        <div class="card">
+                            <div class="block-content-first-item__content__image">
+                                <img class="card-img-top "
+                                     src="https://api.travelworld.com/proxy/image?src=https://i.travelapi.com/hotels/3000000/2170000/2161600/2161561/4b6a6d57_z.jpg"
+                                     alt="Card image cap">
+                            </div>
+                            <div class="card-body block-content-first-item__content__body" data-class="equal-height">
+                                <h5 class="card-title block-content-first-item__content__body-title p-0 m-0">One Resort
+                                    Aqua
+                                    Park & Spa </h5>
+                                <p class="card-text block-content-first-item__content__body-description p-0 m-0">
+                                    Monastir,
+                                    Tunisia</p>
+                                <span class="card-text block-content-first-item__content__body-price p-0 m-0">from € 83</span>
+                            </div>
+                            <div class="card-body  block-content-first-item__content__cashback">
+                                <span class="text ">2% Cashback + 2</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block-content__content-first-item">
+                        <div class="card">
+                            <div class="block-content-first-item__content__image">
+                                <img class="card-img-top "
+                                     src="https://api.travelworld.com/proxy/image?src=https://i.travelapi.com/hotels/3000000/2170000/2161600/2161561/4b6a6d57_z.jpg"
+                                     alt="Card image cap">
+                            </div>
+                            <div class="card-body block-content-first-item__content__body" data-class="equal-height">
+                                <h5 class="card-title block-content-first-item__content__body-title p-0 m-0">One Resort
+                                    Aqua
+                                    Park & Spa </h5>
+                                <p class="card-text block-content-first-item__content__body-description p-0 m-0">
+                                    Monastir,
+                                    Tunisia</p>
+                                <span class="card-text block-content-first-item__content__body-price p-0 m-0">from € 83</span>
+                            </div>
+                            <div class="card-body  block-content-first-item__content__cashback">
+                                <span class="text ">2% Cashback + 2</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block-content__content-first-item">
+                        <div class="card">
+                            <div class="block-content-first-item__content__image">
+                                <img class="card-img-top "
+                                     src="https://api.travelworld.com/proxy/image?src=https://i.travelapi.com/hotels/3000000/2170000/2161600/2161561/4b6a6d57_z.jpg"
+                                     alt="Card image cap">
+                            </div>
+                            <div class="card-body block-content-first-item__content__body" data-class="equal-height">
+                                <h5 class="card-title block-content-first-item__content__body-title p-0 m-0">One Resort
+                                    Aqua
+                                    Park & Spa </h5>
+                                <p class="card-text block-content-first-item__content__body-description p-0 m-0">
+                                    Monastir,
+                                    Tunisia</p>
+                                <span class="card-text block-content-first-item__content__body-price p-0 m-0">from € 83</span>
+                            </div>
+                            <div class="card-body  block-content-first-item__content__cashback">
+                                <span class="text ">2% Cashback + 2</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="block-content__content-first-item">
+                        <div class="card">
+                            <div class="block-content-first-item__content__image">
+                                <img class="card-img-top "
+                                     src="https://api.travelworld.com/proxy/image?src=https://i.travelapi.com/hotels/3000000/2170000/2161600/2161561/4b6a6d57_z.jpg"
+                                     alt="Card image cap">
+                            </div>
+                            <div class="card-body block-content-first-item__content__body" data-class="equal-height">
+                                <h5 class="card-title block-content-first-item__content__body-title p-0 m-0">One Resort
+                                    Aqua
+                                    Park & Spa </h5>
+                                <p class="card-text block-content-first-item__content__body-description p-0 m-0">
+                                    Monastir,
+                                    Tunisia</p>
+                                <span class="card-text block-content-first-item__content__body-price p-0 m-0">from € 83</span>
+                            </div>
+                            <div class="card-body  block-content-first-item__content__cashback">
+                                <span class="text ">2% Cashback + 2</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block-content__content-first-item">
+                        <div class="card">
+                            <div class="block-content-first-item__content__image">
+                                <img class="card-img-top "
+                                     src="https://api.travelworld.com/proxy/image?src=https://i.travelapi.com/hotels/3000000/2170000/2161600/2161561/4b6a6d57_z.jpg"
+                                     alt="Card image cap">
+                            </div>
+                            <div class="card-body block-content-first-item__content__body" data-class="equal-height">
+                                <h5 class="card-title block-content-first-item__content__body-title p-0 m-0">One Resort
+                                    Aqua
+                                    Park & Spa </h5>
+                                <p class="card-text block-content-first-item__content__body-description p-0 m-0">
+                                    Monastir,
+                                    Tunisia</p>
+                                <span class="card-text block-content-first-item__content__body-price p-0 m-0">from € 83</span>
+                            </div>
+                            <div class="card-body  block-content-first-item__content__cashback">
+                                <span class="text ">2% Cashback + 2</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block-content__content-first-item">
+                        <div class="card">
+                            <div class="block-content-first-item__content__image">
+                                <img class="card-img-top "
+                                     src="https://api.travelworld.com/proxy/image?src=https://i.travelapi.com/hotels/3000000/2170000/2161600/2161561/4b6a6d57_z.jpg"
+                                     alt="Card image cap">
+                            </div>
+                            <div class="card-body block-content-first-item__content__body" data-class="equal-height">
+                                <h5 class="card-title block-content-first-item__content__body-title p-0 m-0">One Resort
+                                    Aqua
+                                    Park & Spa </h5>
+                                <p class="card-text block-content-first-item__content__body-description p-0 m-0">
+                                    Monastir,
+                                    Tunisia</p>
+                                <span class="card-text block-content-first-item__content__body-price p-0 m-0">from € 83</span>
+                            </div>
+                            <div class="card-body  block-content-first-item__content__cashback">
+                                <span class="text ">2% Cashback + 2</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block-content__content-first-item">
+                        <div class="card">
+                            <div class="block-content-first-item__content__image">
+                                <img class="card-img-top "
+                                     src="https://api.travelworld.com/proxy/image?src=https://i.travelapi.com/hotels/3000000/2170000/2161600/2161561/4b6a6d57_z.jpg"
+                                     alt="Card image cap">
+                            </div>
+                            <div class="card-body block-content-first-item__content__body" data-class="equal-height">
+                                <h5 class="card-title block-content-first-item__content__body-title p-0 m-0">One Resort
+                                    Aqua
+                                    Park & Spa </h5>
+                                <p class="card-text block-content-first-item__content__body-description p-0 m-0">
+                                    Monastir,
+                                    Tunisia</p>
+                                <span class="card-text block-content-first-item__content__body-price p-0 m-0">from € 83</span>
+                            </div>
+                            <div class="card-body  block-content-first-item__content__cashback">
+                                <span class="text ">2% Cashback + 2</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block-content__content-first-item">
+                        <div class="card">
+                            <div class="block-content-first-item__content__image">
+                                <img class="card-img-top "
+                                     src="https://api.travelworld.com/proxy/image?src=https://i.travelapi.com/hotels/3000000/2170000/2161600/2161561/4b6a6d57_z.jpg"
+                                     alt="Card image cap">
+                            </div>
+                            <div class="card-body block-content-first-item__content__body" data-class="equal-height">
+                                <h5 class="card-title block-content-first-item__content__body-title p-0 m-0">One Resort
+                                    Aqua
+                                    Park & Spa </h5>
+                                <p class="card-text block-content-first-item__content__body-description p-0 m-0">
+                                    Monastir,
+                                    Tunisia</p>
+                                <span class="card-text block-content-first-item__content__body-price p-0 m-0">from € 83</span>
+                            </div>
+                            <div class="card-body  block-content-first-item__content__cashback">
+                                <span class="text ">2% Cashback + 2</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block-content__content-first-item">
+                        <div class="card">
+                            <div class="block-content-first-item__content__image">
+                                <img class="card-img-top "
+                                     src="https://api.travelworld.com/proxy/image?src=https://i.travelapi.com/hotels/3000000/2170000/2161600/2161561/4b6a6d57_z.jpg"
+                                     alt="Card image cap">
+                            </div>
+                            <div class="card-body block-content-first-item__content__body" data-class="equal-height">
+                                <h5 class="card-title block-content-first-item__content__body-title p-0 m-0">One Resort
+                                    Aqua
+                                    Park & Spa </h5>
+                                <p class="card-text block-content-first-item__content__body-description p-0 m-0">
+                                    Monastir,
+                                    Tunisia</p>
+                                <span class="card-text block-content-first-item__content__body-price p-0 m-0">from € 83</span>
+                            </div>
+                            <div class="card-body  block-content-first-item__content__cashback">
+                                <span class="text ">2% Cashback + 2</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="block-content__content-see-more ">
+                <div class="css-1baj6ir">
+                    <a class="" href="#test_id=section_topRecommendedProperties" tabindex="0">
+                        <div class="css-1izq7si">Book now</div>
+                    </a>
+                </div>
+            </section>
+        </section>
+        <section class="block-content second">
+            <section class="block-content__head">
+                <h1 class="block-content__head-title">Redeem Shopping Points</h1>
+            </section>
+            <section class="block-content__content-second">
+                <div class="slick-carousel-second">
+                    <div class="block-content__content-first-item">
+                        <div class="card">
+                            <div class="block-content-first-item__content__image">
+                                <img class="card-img-top "
+                                     src="https://api.travelworld.com/proxy/image?src=https://i.travelapi.com/hotels/34000000/33460000/33457300/33457260/16bd5bef_z.jpg"
+                                     alt="Card image cap">
+                            </div>
+                            <div class="card-body block-content-first-item__content__body">
+                                <h5 class="card-title block-content-first-item__content__body-title p-0 m-0">One Resort
+                                    Aqua
+                                    Park & Spa </h5>
+                                <p class="card-text block-content-first-item__content__body-description p-0 m-0">
+                                    Monastir,
+                                    Tunisia</p>
+                                <span class="card-text block-content-first-item__content__body-price p-0 m-0">from € 83</span>
+                            </div>
+                            <div class="card-body  block-content-first-item__content__cashback">
+                                <span class="text ">2% Cashback + 2</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block-content__content-first-item">
+                        <div class="card">
+                            <div class="block-content-first-item__content__image">
+                                <img class="card-img-top "
+                                     src="https://api.travelworld.com/proxy/image?src=https://i.travelapi.com/hotels/34000000/33460000/33457300/33457260/16bd5bef_z.jpg"
+                                     alt="Card image cap">
+                            </div>
+                            <div class="card-body block-content-first-item__content__body">
+                                <h5 class="card-title block-content-first-item__content__body-title p-0 m-0">One Resort
+                                    Aqua
+                                    Park & Spa </h5>
+                                <p class="card-text block-content-first-item__content__body-description p-0 m-0">
+                                    Monastir,
+                                    Tunisia</p>
+                                <span class="card-text block-content-first-item__content__body-price p-0 m-0">from € 83</span>
+                            </div>
+                            <div class="card-body  block-content-first-item__content__cashback">
+                                <span class="text ">2% Cashback + 2</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block-content__content-first-item">
+                        <div class="card">
+                            <div class="block-content-first-item__content__image">
+                                <img class="card-img-top "
+                                     src="https://api.travelworld.com/proxy/image?src=https://i.travelapi.com/hotels/34000000/33460000/33457300/33457260/16bd5bef_z.jpg"
+                                     alt="Card image cap">
+                            </div>
+                            <div class="card-body block-content-first-item__content__body">
+                                <h5 class="card-title block-content-first-item__content__body-title p-0 m-0">One Resort
+                                    Aqua
+                                    Park & Spa </h5>
+                                <p class="card-text block-content-first-item__content__body-description p-0 m-0">
+                                    Monastir,
+                                    Tunisia</p>
+                                <span class="card-text block-content-first-item__content__body-price p-0 m-0">from € 83</span>
+                            </div>
+                            <div class="card-body  block-content-first-item__content__cashback">
+                                <span class="text ">2% Cashback + 2</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block-content__content-first-item">
+                        <div class="card">
+                            <div class="block-content-first-item__content__image">
+                                <img class="card-img-top "
+                                     src="https://api.travelworld.com/proxy/image?src=https://i.travelapi.com/hotels/34000000/33460000/33457300/33457260/16bd5bef_z.jpg"
+                                     alt="Card image cap">
+                            </div>
+                            <div class="card-body block-content-first-item__content__body">
+                                <h5 class="card-title block-content-first-item__content__body-title p-0 m-0">One Resort
+                                    Aqua
+                                    Park & Spa </h5>
+                                <p class="card-text block-content-first-item__content__body-description p-0 m-0">
+                                    Monastir,
+                                    Tunisia</p>
+                                <span class="card-text block-content-first-item__content__body-price p-0 m-0">from € 83</span>
+                            </div>
+                            <div class="card-body  block-content-first-item__content__cashback">
+                                <span class="text ">2% Cashback + 2</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block-content__content-first-item">
+                        <div class="card">
+                            <div class="block-content-first-item__content__image">
+                                <img class="card-img-top "
+                                     src="https://api.travelworld.com/proxy/image?src=https://i.travelapi.com/hotels/34000000/33460000/33457300/33457260/16bd5bef_z.jpg"
+                                     alt="Card image cap">
+                            </div>
+                            <div class="card-body block-content-first-item__content__body">
+                                <h5 class="card-title block-content-first-item__content__body-title p-0 m-0">One Resort
+                                    Aqua
+                                    Park & Spa </h5>
+                                <p class="card-text block-content-first-item__content__body-description p-0 m-0">
+                                    Monastir,
+                                    Tunisia</p>
+                                <span class="card-text block-content-first-item__content__body-price p-0 m-0">from € 83</span>
+                            </div>
+                            <div class="card-body  block-content-first-item__content__cashback">
+                                <span class="text ">2% Cashback + 2</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block-content__content-first-item">
+                        <div class="card">
+                            <div class="block-content-first-item__content__image">
+                                <img class="card-img-top "
+                                     src="https://api.travelworld.com/proxy/image?src=https://i.travelapi.com/hotels/34000000/33460000/33457300/33457260/16bd5bef_z.jpg"
+                                     alt="Card image cap">
+                            </div>
+                            <div class="card-body block-content-first-item__content__body">
+                                <h5 class="card-title block-content-first-item__content__body-title p-0 m-0">One Resort
+                                    Aqua
+                                    Park & Spa </h5>
+                                <p class="card-text block-content-first-item__content__body-description p-0 m-0">
+                                    Monastir,
+                                    Tunisia</p>
+                                <span class="card-text block-content-first-item__content__body-price p-0 m-0">from € 83</span>
+                            </div>
+                            <div class="card-body  block-content-first-item__content__cashback">
+                                <span class="text ">2% Cashback + 2</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block-content__content-first-item">
+                        <div class="card">
+                            <div class="block-content-first-item__content__image">
+                                <img class="card-img-top "
+                                     src="https://api.travelworld.com/proxy/image?src=https://i.travelapi.com/hotels/34000000/33460000/33457300/33457260/16bd5bef_z.jpg"
+                                     alt="Card image cap">
+                            </div>
+                            <div class="card-body block-content-first-item__content__body">
+                                <h5 class="card-title block-content-first-item__content__body-title p-0 m-0">One Resort
+                                    Aqua
+                                    Park & Spa </h5>
+                                <p class="card-text block-content-first-item__content__body-description p-0 m-0">
+                                    Monastir,
+                                    Tunisia</p>
+                                <span class="card-text block-content-first-item__content__body-price p-0 m-0">from € 83</span>
+                            </div>
+                            <div class="card-body  block-content-first-item__content__cashback">
+                                <span class="text ">2% Cashback + 2</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block-content__content-first-item">
+                        <div class="card">
+                            <div class="block-content-first-item__content__image">
+                                <img class="card-img-top "
+                                     src="https://api.travelworld.com/proxy/image?src=https://i.travelapi.com/hotels/34000000/33460000/33457300/33457260/16bd5bef_z.jpg"
+                                     alt="Card image cap">
+                            </div>
+                            <div class="card-body block-content-first-item__content__body">
+                                <h5 class="card-title block-content-first-item__content__body-title p-0 m-0">One Resort
+                                    Aqua
+                                    Park & Spa </h5>
+                                <p class="card-text block-content-first-item__content__body-description p-0 m-0">
+                                    Monastir,
+                                    Tunisia</p>
+                                <span class="card-text block-content-first-item__content__body-price p-0 m-0">from € 83</span>
+                            </div>
+                            <div class="card-body  block-content-first-item__content__cashback">
+                                <span class="text ">2% Cashback + 2</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block-content__content-first-item">
+                        <div class="card">
+                            <div class="block-content-first-item__content__image">
+                                <img class="card-img-top "
+                                     src="https://api.travelworld.com/proxy/image?src=https://i.travelapi.com/hotels/34000000/33460000/33457300/33457260/16bd5bef_z.jpg"
+                                     alt="Card image cap">
+                            </div>
+                            <div class="card-body block-content-first-item__content__body">
+                                <h5 class="card-title block-content-first-item__content__body-title p-0 m-0">One Resort
+                                    Aqua
+                                    Park & Spa </h5>
+                                <p class="card-text block-content-first-item__content__body-description p-0 m-0">
+                                    Monastir,
+                                    Tunisia</p>
+                                <span class="card-text block-content-first-item__content__body-price p-0 m-0">from € 83</span>
+                            </div>
+                            <div class="card-body  block-content-first-item__content__cashback">
+                                <span class="text ">2% Cashback + 2</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block-content__content-first-item">
+                        <div class="card">
+                            <div class="block-content-first-item__content__image">
+                                <img class="card-img-top "
+                                     src="https://api.travelworld.com/proxy/image?src=https://i.travelapi.com/hotels/34000000/33460000/33457300/33457260/16bd5bef_z.jpg"
+                                     alt="Card image cap">
+                            </div>
+                            <div class="card-body block-content-first-item__content__body">
+                                <h5 class="card-title block-content-first-item__content__body-title p-0 m-0">One Resort
+                                    Aqua
+                                    Park & Spa </h5>
+                                <p class="card-text block-content-first-item__content__body-description p-0 m-0">
+                                    Monastir,
+                                    Tunisia</p>
+                                <span class="card-text block-content-first-item__content__body-price p-0 m-0">from € 83</span>
+                            </div>
+                            <div class="card-body  block-content-first-item__content__cashback">
+                                <span class="text ">2% Cashback + 2</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <section class="block-content third">
+            <section class="block-content__head">
+                <h1 class="block-content__head-title">Redeem Shopping Points</h1>
+            </section>
+            <section class="block-content__content-third">
+                <div class="slick-carousel-second">
+                    <div class="block-content__content-first-item">
+                        <div class="card">
+                            <div class="block-content-first-item__content__image">
+                                <img class="card-img-top "
+                                     src="https://api.travelworld.com/proxy/image?src=https://i.travelapi.com/hotels/34000000/33460000/33457300/33457260/16bd5bef_z.jpg"
+                                     alt="Card image cap">
+                            </div>
+                            <div class="card-body  block-content-first-item__content__cashback">
+                                <span class="text ">2% Cashback + 2</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block-content__content-first-item">
+                        <div class="card">
+                            <div class="block-content-first-item__content__image">
+                                <img class="card-img-top "
+                                     src="https://api.travelworld.com/proxy/image?src=https://i.travelapi.com/hotels/34000000/33460000/33457300/33457260/16bd5bef_z.jpg"
+                                     alt="Card image cap">
+                            </div>
+                            <div class="card-body  block-content-first-item__content__cashback">
+                                <span class="text ">2% Cashback + 2</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block-content__content-first-item">
+                        <div class="card">
+                            <div class="block-content-first-item__content__image">
+                                <img class="card-img-top "
+                                     src="https://api.travelworld.com/proxy/image?src=https://i.travelapi.com/hotels/34000000/33460000/33457300/33457260/16bd5bef_z.jpg"
+                                     alt="Card image cap">
+                            </div>
+                            <div class="card-body  block-content-first-item__content__cashback">
+                                <span class="text ">2% Cashback + 2</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block-content__content-first-item">
+                        <div class="card">
+                            <div class="block-content-first-item__content__image">
+                                <img class="card-img-top "
+                                     src="https://api.travelworld.com/proxy/image?src=https://i.travelapi.com/hotels/34000000/33460000/33457300/33457260/16bd5bef_z.jpg"
+                                     alt="Card image cap">
+                            </div>
+                            <div class="card-body  block-content-first-item__content__cashback">
+                                <span class="text ">2% Cashback + 2</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block-content__content-first-item">
+                        <div class="card">
+                            <div class="block-content-first-item__content__image">
+                                <img class="card-img-top "
+                                     src="https://api.travelworld.com/proxy/image?src=https://i.travelapi.com/hotels/34000000/33460000/33457300/33457260/16bd5bef_z.jpg"
+                                     alt="Card image cap">
+                            </div>
+                            <div class="card-body  block-content-first-item__content__cashback">
+                                <span class="text">2% Cashback + 2</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block-content__content-first-item">
+                        <div class="card">
+                            <div class="block-content-first-item__content__image">
+                                <img class="card-img-top "
+                                     src="https://api.travelworld.com/proxy/image?src=https://i.travelapi.com/hotels/34000000/33460000/33457300/33457260/16bd5bef_z.jpg"
+                                     alt="Card image cap">
+                            </div>
+                            <div class="card-body  block-content-first-item__content__cashback">
+                                <span class="text">2% Cashback + 2</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <section class="block-content fourth">
+            <section class="block-content__head">
+                <h1 class="block-content__head-title">EliteClub's travelWorld</h1>
+            </section>
+            <section class="block-content__content-fourth">
+                <div class="slick-carousel-fourth">
+                    <div class="block-content__content-fourth-item">
+                        <div class="card">
+                            <div class="block-content-fourth-item__content__image">
+                                <a href="#">
+                                    <div>
+                                        <img class="card-img-top"
+                                             src="https://res.cloudinary.com/roombonus/image/upload/v1585242036/production/FirstPage/FirstPageEliteClub/tw_img_home_eliteclub1.jpg"
+                                             alt="Card image cap">
+                                    </div>
+                                    <div class="block-content-fourth-item__content__image-title">
+                                        <span class="text"> EliteClub </span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="card-body  block-content-first-item__content__cashback">
+                                <span class="text css-16lo41c">The unique Business &amp; Lifestyle Network</span>
+                                <a class="d-block" href="/en-US/eliteClub" target="_self"><span class="text css-g6dazk">Find out more</span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block-content__content-fourth-item">
+                        <div class="card">
+                            <div class="block-content-fourth-item__content__image">
+                                <a href="#">
+                                    <div>
+                                        <img class="card-img-top"
+                                             src="https://res.cloudinary.com/roombonus/image/upload/v1585242036/production/FirstPage/FirstPageEliteClub/tw_img_home_eliteclub1.jpg"
+                                             alt="Card image cap">
+                                    </div>
+                                    <div class="block-content-fourth-item__content__image-title">
+                                        <span class="text"> EliteClub </span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="card-body  block-content-first-item__content__cashback">
+                                <span class="text css-16lo41c">The unique Business &amp; Lifestyle Network</span>
+                                <a class="d-block" href="/en-US/eliteClub" target="_self"><span class="text css-g6dazk">Find out more</span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block-content__content-fourth-item">
+                        <div class="card">
+                            <div class="block-content-fourth-item__content__image">
+                                <a href="#">
+                                    <div>
+                                        <img class="card-img-top"
+                                             src="https://res.cloudinary.com/roombonus/image/upload/v1585242036/production/FirstPage/FirstPageEliteClub/tw_img_home_eliteclub1.jpg"
+                                             alt="Card image cap">
+                                    </div>
+                                    <div class="block-content-fourth-item__content__image-title">
+                                        <span class="text"> EliteClub </span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="card-body  block-content-first-item__content__cashback">
+                                <span class="text css-16lo41c">The unique Business &amp; Lifestyle Network</span>
+                                <a class="d-block" href="/en-US/eliteClub" target="_self"><span class="text css-g6dazk">Find out more</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </section>
+
+</section>
+<footer id="footer" class="pt-4">
+    <div class="container border-bottom">
+        <div class="row">
+            <section class="col-md-3 col-sm-6 ">
+                <h4 class="text-center footer__title">Liên hệ</h4>
+                <p><span>CÔNG TY CỔ PHẦN DỊCH VỤ DU LỊCH GOLF VIỆT NAM</span></p>
+                <p><i class="fas fa-map-marker-alt"></i> <span>ĐỊA CHỈ: SỐ 20 VÕ CHÍ CÔNG, PHƯỜNG NGHĨA ĐÔ, QUẬN CẦU GIẤY, HÀ NỘI</span>
+                </p>
+                <p><i class="fas fa-phone-alt"></i> <span>SDT: 0901.803.688</span></p>
+                <p><i class="fas fa-envelope"></i> <span>Email: contact@vgstravel.vn</span></p>
+            </section>
+            <section class="col-md-3 col-sm-6 ">
+                <h4 class="text-center footer__title">Kết nối với chúng tôi</h4>
+                <p class="mb-0 d-flex justify-content-center">
+                    <a href="#" class="p-1"><img src="/images/facebook-logo-2867.png" width="24" alt=""></a>
+                    <a href="#" class="p-1"><img src="/images/instagram-logo-8869.png" width="24" alt=""></a>
+                    <a href="#" class="p-1"><img src="/images/iconmonstr-twitter-3-24.png" width="24" alt=""></a>
+                    <a href="#" class="p-1"><img src="/images/iconmonstr-youtube-8-24.png" width="24" alt=""></a>
+                </p>
+            </section>
+            <section class="col-md-3 col-sm-6 ">
+                <h4 class="text-center footer__title">QR Vhandicap Android</h4>
+            </section>
+            <section class="col-md-3 col-sm-6 footer__title">
+                <h4 class="text-center">QR Vhandicap iOS</h4>
+            </section>
+        </div>
+    </div>
+    <div class="container footer_bottom">
+        <div class="row  mt-2 mb-2">
+            <div class="col-md-4 col-sm-6 footer_bottom--copyright"><span>© Copyright 2021 . VGS Travel</span></div>
+            <div class="col-md-8  col-sm-6 footer_bottom--menu">
+                <a href="">Contact Us</a>
+                <a href="">Contact Us</a>
+                <a href="">Contact Us</a>
+                <a href="">Contact Us</a>
+                <a href="">Contact Us</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
 </body>
+</html>
+
+<script>
+
+    $(".slick-carousel-slider").slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        infinite: true,
+        draggable: true,
+        prevArrow: `<div><div class="css-az81sm"><img class="css-1t94q4r" src="https://www.travelworld.com/static/media/tw_icon_arrow_left.ab12c327.svg"></div></div>`,
+        nextArrow: `<div><div class="css-1h3ylvg"><img class="css-1t94q4r" src="https://www.travelworld.com//static/media/tw_icon_arrow_right.aa667e54.svg"></div></div>`,
+        responsive: [
+            {
+                breakpoint: 600,
+                arrows: true,
+                prevArrow: `<div><div class="css-ettl4u"><img class="css-1t94q4r" src="https://www.travelworld.com/static/media/tw_icon_arrow_left.ab12c327.svg"></div></div>`,
+                nextArrow: `<div><div class="css-gxhd20"><img class="css-1t94q4r" src="https://www.travelworld.com//static/media/tw_icon_arrow_right.aa667e54.svg"></div></div>`
+            },
+
+        ]
+    })
+
+    $('.slick-carousel').slick({
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        arrows: true,
+        infinite: true,
+        draggable: true,
+        // variableWidth: true,
+        // centerMode: false,
+        // adaptiveHeight: true,
+        // focusOnSelect: false,
+        // centerPadding:"0px",
+        // lazyLoad: 'progressive',
+        // customPaging: "20px",
+        prevArrow: `<div><div class="css-i0hd2t"><img class="css-1t94q4r" src="https://www.travelworld.com/static/media/tw_icon_arrow_left.ab12c327.svg"></div></div>`,
+        nextArrow: `<div><div class="css-mn22vk"><img class="css-1t94q4r" src="https://www.travelworld.com/static/media/tw_icon_arrow_right.aa667e54.svg"></div></div>`,
+        responsive: [
+            {
+                breakpoint: 1024,
+                arrows: false,
+                settings: {
+                    slidesToShow: 5,
+                    slidesToScroll: 1,
+                }
+            },
+            {
+                breakpoint: 720,
+                arrows: false,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            },
+            {
+                breakpoint: 600,
+                arrows: false,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            },
+            {
+                breakpoint: 480,
+                arrows: false,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+    });
+
+
+    $('.slick-carousel-third').slick({
+        speed: 300,
+        slidesToShow: 5,
+        // variableWidth: true,
+        arrows: false,
+        slidesToScroll: 5,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 5,
+                    slidesToScroll: 5,
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+    });
+
+    $('.slick-carousel-second').slick({
+        speed: 300,
+        slidesToShow: 5,
+        arrows: false,
+        // variableWidth: true,
+        slidesToScroll: 5,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 5,
+                    slidesToScroll: 5,
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+    });
+
+    $('.slick-carousel-fourth').slick({
+        speed: 300,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        // variableWidth: true,
+        arrows: false,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+    });
+
+
+    const equalHeight = function (data_class){
+        $maxHeight = 0;
+        $("[data-class='"+ data_class +"']").each(function(){
+            if($(this).height() > $maxHeight) {
+                $maxHeight = $(this).height();
+            }
+        });
+        $("[data-class='"+ data_class +"']").height($maxHeight);
+    }
+
+    $(document).ready(function(){
+        equalHeight("equal-height")
+
+    });
+</script>

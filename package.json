@@ -10,17 +10,18 @@
     "build": "brunch build --production"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.4"
   },
   "devDependencies": {
-    "auto-reload-brunch": "^2",
-    "babel-brunch": "~6.0",
+    "auto-reload-brunch": "^3.0.1",
+    "babel-brunch": "~7.0.1",
     "babel-preset-latest": "^6",
-    "bootstrap": "^4.0.0",
-    "brunch": "^2",
-    "clean-css-brunch": "^2",
-    "jquery": "^3.3.1",
-    "popper.js": "^1.14.1",
-    "sass-brunch": "^2.10.4",
+    "bootstrap": "^5.1.0",
+    "brunch": "^4.0.0",
+    "clean-css-brunch": "^3.0.0",
+    "jquery": "^3.6.0",
+    "popper.js": "^1.16.1",
+    "sass-brunch": "^3.0.0",
     "uglify-js-brunch": "^2"
   }
 }

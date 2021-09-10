@@ -21,6 +21,11 @@ exports.plugins = {
       includePaths: ['./node_modules/bootstrap/scss/'],
       precision: 8
     }
+  },
+  enabled: {
+    css: true,
+    js: true,
+    assets: true
   }
 };
 
