@@ -4,36 +4,32 @@
 body {
   header {
     background: $main-color;
-    >div {
-      overflow-x: hidden;
-    }
-    nav.nav-secondary {
-      background: $secondary-color;
-      .navbar-toggler {
-        span {
-          color: $main-color;
-        }
-      }
-      div {
-        li {
-          a.nav-link {
-            display: inline-block;
-            justify-content: space-between;
-            color: $main-color !important;
-            text-transform: uppercase;
-            padding: 1rem 0.5rem;
-            //text-align: center;
-            white-space: nowrap;
-            font-weight: $weight-highlight;
+    .nav{
+      background-color: #e9e9e9;
 
-            &:hover {
-              color: $main-color;
+      .menu {
+        font-size: 14px;
+        >ul{
+          >li{
+            &:hover{
+              background-color: #40b5a8;
             }
-          }
-          a.active {
-            background: $active-color;
-            &:hover {
-              color: $main-color;
+            background-color: #e9e9e9;
+            >a{
+              font-family: Poppins;
+              font-size: $size-normal;
+              font-weight: $weight-highlight;
+              &:hover{
+                color: white;
+              }
+            }
+            >ul{
+              li {
+                a{
+                  font-family: Poppins;
+                  font-size: $size-normal;
+                }
+              }
             }
           }
         }

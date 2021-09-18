@@ -1,24 +1,278 @@
-@import "variable";
+#footer {
+  width: 100%;
+  z-index: 4;
+  //margin-top: 32px;
+  background-color: rgb(248, 248, 248);
+  padding-top: 44px;
+  padding-bottom: 30px;
 
-footer#footer {
-  border-top: 1px solid $secondary-color;
-  background: $main-color;
-  overflow-x: hidden;
-  .footer__title {
-    color: $secondary-color;
-    font-size: $size-large;
-    font-weight: bold;
-  }
+  .container {
+    border: 0px solid rgb(255, 255, 255);
+    display: flex;
+    flex: initial;
+    flex-flow: row wrap;
+    width: auto;
+    background: transparent;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px 24px;
+    max-width: 1584px;
+    .css-1tuc3cn {
+      border: 0px solid rgb(255, 255, 255);
+      display: flex;
+      flex: initial;
+      flex-flow: column wrap;
+      width: 100%;
+      max-width: 100%;
+      background: transparent;
 
-  p {
-    span {
-      font-size: $size-small;
+      .css-13xo0ti {
+        border: 0px solid rgb(255, 255, 255);
+        display: flex;
+        flex: initial;
+        flex-flow: row wrap;
+        width: 100%;
+        max-width: 100%;
+        background: transparent;
+        -webkit-box-pack: justify;
+        justify-content: space-between;
+
+        .css-g3c9sp {
+          border: 0px solid rgb(255, 255, 255);
+          display: flex;
+          flex: initial;
+          flex-flow: row wrap;
+          width: auto;
+          max-width: 100%;
+          background: transparent;
+          padding-left: 0px;
+          padding-right: 0px;
+
+          .outer {
+            padding: 0px;
+            border-width: 0px;
+            width: 100%;
+
+            .css-1j8r2w0 {
+              cursor: default;
+
+              .css-16s8rxf {
+                border: 0px solid rgb(255, 255, 255);
+                display: flex;
+                flex: initial;
+                flex-flow: row nowrap;
+                width: 100%;
+                max-width: 100%;
+                background: transparent;
+                -webkit-box-align: center;
+                align-items: center;
+                -webkit-box-pack: justify;
+                justify-content: space-between;
+
+                .css-1pyg0zs {
+                  color: rgb(66, 67, 70);
+                  margin-bottom: 0px;
+                  font-size: 1rem;
+                  font-weight: 600;
+                  line-height: 1.5;
+                }
+
+                .css-ihohpr {
+                  width: 100px;
+                  margin-top: 12px;
+                  margin-bottom: 24px;
+                }
+              }
+            }
+
+            .children {
+              margin-top: 0px;
+
+              .css-7blzqa {
+                display: block;
+                color: rgb(66, 67, 70);
+                margin-bottom: 24px;
+                font-size: 1rem;
+                font-weight: 400;
+                line-height: 1.5;
+                display: block;
+              }
+
+              .css-d9fh8s {
+                border: 0px solid rgb(255, 255, 255);
+                display: flex;
+                flex: initial;
+                flex-flow: row wrap;
+                width: auto;
+                max-width: 100%;
+                background: transparent;
+                padding-left: 0px;
+                color: rgb(66, 67, 70);
+                margin-bottom: 24px;
+                font-size: 1rem;
+                font-weight: 400;
+                line-height: 1.5;
+                overflow: visible;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .css-aa38jh {
+      border-width: 1px 0px 0px;
+      border-style: solid;
+      border-color: rgb(216, 216, 216) rgb(255, 255, 255) rgb(255, 255, 255);
+      border-image: initial;
+      display: flex;
+      flex: initial;
+      flex-flow: row wrap;
+      width: 100%;
+      max-width: 100%;
+      background: transparent;
+      padding-top: 42px;
+      -webkit-box-align: center;
+      align-items: center;
+      -webkit-box-pack: justify;
+      justify-content: space-between;
+
+      .css-1c7zdkb {
+        display: inline-block;
+        font-family: Poppins;
+        width: auto;
+        text-overflow: initial;
+        max-width: 100%;
+        overflow: visible;
+        color: rgb(66, 67, 70);
+        text-align: left;
+        font-size: 0.857rem;
+        font-weight: 400;
+        line-height: 1.5;
+        margin-top: 0px;
+
+        .css-3u3jcm {
+          margin-left: 5px;
+          font-size: 0.714rem;
+          font-weight: 400;
+          line-height: 1.5;
+        }
+      }
+
+      .css-1dbb585 {
+        border: 0px solid rgb(255, 255, 255);
+        display: flex;
+        flex: initial;
+        flex-flow: row wrap;
+        width: auto;
+        max-width: 100%;
+        background: transparent;
+        -webkit-box-align: center;
+        align-items: center;
+        -webkit-box-pack: start;
+        justify-content: flex-start;
+
+        .css-o00lgw {
+          border: 0px solid rgb(255, 255, 255);
+          display: flex;
+          flex: initial;
+          flex-flow: row wrap;
+          width: auto;
+          max-width: 100%;
+          background: transparent;
+
+          a {
+            display: block;
+
+            .css-1f862k3 {
+              max-width: 100%;
+              width: 26px;
+              height: 26px;
+              margin-right: 14px;
+            }
+            .css-yj2kaa{
+              vertical-align: middle;
+            }
+          }
+        }
+
+        .css-1z0tsgg {
+          border: 0px solid rgb(255, 255, 255);
+          display: flex;
+          flex: initial;
+          flex-flow: row wrap;
+          width: auto;
+          max-width: 100%;
+          background: transparent;
+          -webkit-box-align: center;
+          align-items: center;
+
+          .css-1aduecp {
+            border: 0px solid white;
+            display: flex;
+            flex: initial;
+            flex-flow: row wrap;
+            width: auto;
+            max-width: 100%;
+            background: transparent;
+            position: relative;
+
+            .css-o00lgw {
+              border: 0px solid white;
+              display: flex;
+              flex: initial;
+              flex-flow: row wrap;
+              width: auto;
+              max-width: 100%;
+              background: transparent;
+            }
+          }
+          .css-1vxuv32 {
+            .css-o00lgw {
+              text-align: center;
+              border-radius: 0px !important;
+              background: transparent !important;
+              border-color: transparent !important;
+              box-shadow: none !important;
+              display: flex;
+              flex: initial;
+              flex-flow: row wrap;
+              width: auto;
+              max-width: 100%;
+
+              .css-cgtp9j {
+                display: inline-block;
+                font-family: Poppins;
+                width: auto;
+                text-overflow: initial;
+                max-width: 100%;
+                overflow: visible;
+                color: rgb(66, 67, 70);
+                text-transform: uppercase;
+                font-size: 1rem;
+                font-weight: 500;
+                line-height: 1.5;
+              }
+            }
+          }
+        }
+      }
     }
   }
-  .footer_bottom {
-    font-size: $size-small;;
-    .footer_bottom--menu{
-      text-align: right;
-    }
+}
+
+@media (min-width: 1200px) {
+  .css-g3c9sp {
+    max-width: 20%;
+    flex-basis: 20%;
+    padding-right: 16px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .css-g3c9sp {
+    width: 100% !important;
+    flex-basis: 20%;
+    padding-right: 16px;
   }
 }
