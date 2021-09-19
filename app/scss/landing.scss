@@ -4,6 +4,9 @@
 ::-webkit-scrollbar {
   width: 7px;
 }
+a{
+  text-decoration: unset;
+}
 
 /* Track */
 ::-webkit-scrollbar-track {
@@ -38,6 +41,7 @@ textarea:focus, input:focus, select:focus {
 
 body {
   overflow-x: hidden;
+
   .css-1baj6ir {
     font-family: Poppins;
     border: 0px solid rgb(255, 255, 255);
@@ -332,7 +336,7 @@ body {
       flex-basis: initial;
       flex-flow: column nowrap;
       width: 100%;
-      max-width: 1584px;
+      max-width: 1320px;
       background: transparent;
       margin-left: auto;
       margin-right: auto;
@@ -440,10 +444,11 @@ body {
                         margin: 0 13px;
                         position: relative;
 
-                        &:hover{
+                        &:hover {
                           box-shadow: rgb(0 0 0 / 25%) 0px 7px 40px 0px;
 
                         }
+
                         .css-1jhzyy2 {
                           border-radius: 10px;
                           overflow: hidden;
@@ -1325,106 +1330,202 @@ body {
                 }
               }
 
-              .tabs {
-                border-radius: 0px 10px 10px;
-                box-shadow: rgb(0 0 0 / 15%) 0px 30px 40px 0px;
+            }
+          }
+        }
 
-                .tab {
-                  .post-highligh, .post-child {
-                    .post-detail {
-                      .post-thumbnail {
-                        img {
-                          height: 100%;
-                          width: 100%;
-                          object-fit: cover;
-                          opacity: 1;
-                          max-height: 176.750px;
-                        }
-                      }
+        .news-right, .news-left {
+          > nav.tab-head {
+            .nav-tabs {
+              border-color: #40b5a8;
 
-                      .post-content {
-                        .post-title {
-                          span {
-                            display: inline-block;
-                            width: auto;
-                            text-overflow: ellipsis;
-                            max-width: 100%;
-                            overflow: hidden;
-                            color: #424346;
-                            text-align: left;
-                            white-space: nowrap;
-                            font-size: $size-normal;
-                            font-weight: 400;
-                            line-height: 1.5;
-                            margin-right: 4px;
-                          }
-                        }
+              .nav-link {
+                outline: unset !important;
+                border: unset !important;
+                padding: 15px 25px;
+                color: black;
+                border-radius: unset;
+                font-size: $size-normal;
 
-                        .post-description {
-                          span {
-                            display: inline-block;
-                            width: auto;
-                            text-overflow: ellipsis;
-                            max-width: 100%;
-                            overflow: hidden;
-                            color: #909090;
-                            //white-space: nowrap;
-                            font-size: 11.998px;
-                            font-weight: 400;
-                            line-height: 1.5;
-                            margin-right: 4px;
-                          }
-                        }
-                      }
+                &:first-child {
+                  border-radius: 10px 0 0 0;
+                }
+
+                &:last-child {
+                  border-radius: 0 10px 0 0;
+                }
+
+                &:hover {
+                  border: unset;
+                }
+              }
+
+              .active {
+                background: #40b5a8;
+                color: white;
+              }
+            }
+          }
+        }
+
+        .news-right {
+          > div.tab-content {
+            > div.tab-pane {
+              > .post-highlight {
+                margin-top: 24px;
+
+                .post-thumb {
+                  img {
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                    opacity: 1;
+                    max-height: 200px;
+                  }
+                }
+
+                .post-data {
+                  .post-data-title {
+                    span {
+                      font-size: $size-large;
                     }
                   }
 
-                  .post-child {
-                    .row {
-                      margin-top: 20px;
+                  .post-data-content {
+                    font-size: $size-normal;
+                    margin: 10px 0;
+                    word-break: break-word;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    display: -webkit-box;
+                    line-height: 24px;
+                    -webkit-line-clamp: 3;
+                    -webkit-box-orient: vertical;
+                  }
+                }
+              }
 
-                      > div {
-                        .post-detail {
-                          background: #ebebeb;
+              > .post-child {
+
+                .post-detail {
+                  margin-top: 24px;
+
+                  > div {
+                    background: #efefef;
+
+                    .post-thumb {
+                      a {
+                        display: inline-block;
+
+                        img {
+                          width: 100%;
+                        }
+                      }
+                    }
+
+                    .post-data {
+                      .post-data-title {
+                        margin: 10px 0;
+                        word-break: break-word;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        display: -webkit-box;
+                        line-height: 15px;
+                        //max-height: 32px;
+                        -webkit-line-clamp: 2;
+                        -webkit-box-orient: vertical;
+                        span {
+                          font-size: $size-normal;
                         }
                       }
                     }
                   }
                 }
+              }
+            }
+          }
+        }
 
-                .tab-sitebar {
-                  .post-highligh {
-                    .post-detail {
-                      position: relative;
+        .news-left {
+          > div.tab-content {
+            > div.tab-pane {
+              > .post-highlight {
+                margin-top: 24px;
+                position: relative;
 
-                      .post-content {
-                        width: 100%;
-                        max-width: 100%;
-                        background: transparent;
-                        padding-left: 10%;
-                        padding-right: 10%;
-                        -webkit-box-align: center;
-                        align-items: end;
-                        height: 100%;
-                        -webkit-box-pack: center;
-                        justify-content: center;
-                        position: absolute;
-                        top: 0;
-                        display: flex;
-                        flex: initial;
-                        flex-flow: row wrap;
+                .post-thumb {
+                  img {
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                    opacity: 1;
+                    max-height: 200px;
+                  }
+                }
 
+                .post-data {
+                  width: 100%;
+                  max-width: 100%;
+                  background: 0 0;
+                  padding-left: 10%;
+                  padding-right: 10%;
+                  -webkit-box-align: center;
+                  align-items: end;
+                  height: 100%;
+                  -webkit-box-pack: center;
+                  justify-content: center;
+                  position: absolute;
+                  top: 0;
+                  display: flex;
+                  flex: initial;
+                  flex-flow: row wrap;
+                  .post-data-title {
+                    text-align: center;
+                    a {
+                      font-weight: $weight-large;
+                      color: white;
+                      &:hover {
+                        color: #40b5a8;
+                      }
+                      span {
+                        font-size: $size-large;
+                      }
+                    }
+                  }
+
+                }
+              }
+
+              > .post-child {
+                .post-detail {
+                  margin-top: 24px;
+                  > div {
+                    background: #efefef;
+
+                    .post-thumb {
+                      a {
+                        display: inline-block;
+
+                        img {
+                          width: 100%;
+                        }
+                      }
+                    }
+
+                    .post-data {
+
+                      .post-data-title {
+                        margin: 10px 0;
+                        word-break: break-word;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        display: -webkit-box;
+                        line-height: 16px;
+                        //max-height: 32px;
+                        -webkit-line-clamp: 2;
+                        -webkit-box-orient: vertical;
                         span {
-                          display: inline-block;
-                          font-family: Poppins;
-                          width: auto;
-                          text-overflow: initial;
-                          max-width: 100%;
-                          overflow: visible;
-                          text-align: center;
                           font-size: $size-normal;
-                          font-weight: 600;
-                          line-height: 1.4;
                         }
                       }
                     }
