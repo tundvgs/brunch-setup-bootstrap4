@@ -1,0 +1,56 @@
+@import "variable";
+
+#main.about-us{
+  .css-1utvz5n{
+    .css-wmt5k7{
+      max-width: 720px;
+      border: 0 solid rgb(255, 255, 255);
+      display: flex;
+      flex: initial;
+      flex-flow: column wrap;
+      background: transparent;
+      -webkit-box-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      justify-content: center;
+      font-family: PoppinsRegular;
+      margin: 0;
+      width: 100%;
+      white-space: pre-line;
+      word-break: break-word;
+      font-size: $size-normal;
+      font-weight: 400;
+      line-height: 1.5;
+      .css-1w5npbh{
+        border: 0 solid rgb(255, 255, 255);
+        display: flex;
+        flex: initial;
+        flex-flow: column wrap;
+        width: 100%;
+        max-width: 100%;
+        background: transparent;
+        margin-top: 2em;
+        .css-13sacn9{
+          display: inline-block;
+          font-family: Poppins;
+          width: auto;
+          text-overflow: initial;
+          max-width: 100%;
+          overflow: visible;
+          font-size: $size-title-popup;
+          font-weight: $weight-highlight;
+        }
+        .css-sau84p {
+          display: inline-block;
+          font-family: Poppins;
+          width: auto;
+          text-overflow: initial;
+          max-width: 100%;
+          overflow: visible;
+          margin-top: 1em;
+          font-size: $size-normal;
+        }
+      }
+    }
+  }
+}

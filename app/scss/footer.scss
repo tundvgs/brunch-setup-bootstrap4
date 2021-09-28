@@ -1,3 +1,5 @@
+@import "variable";
+
 #footer {
   width: 100%;
   z-index: 4;
@@ -16,7 +18,7 @@
     margin-left: auto;
     margin-right: auto;
     padding: 0px 24px;
-    max-width: 1584px;
+    max-width: $max-with-container;
     .css-1tuc3cn {
       border: 0px solid rgb(255, 255, 255);
       display: flex;

@@ -1,0 +1,35 @@
+@import "variable";
+
+#main.contact{
+  .css-1w5npbh{
+
+    border: 0px solid rgb(255, 255, 255);
+    display: flex;
+    flex: initial;
+    flex-flow: column wrap;
+    width: 750px;
+    max-width: 100%;
+    background: transparent;
+    margin-top: 48px;
+    .css-13sacn9{
+      display: inline-block;
+      font-family: Poppins;
+      width: auto;
+      text-overflow: initial;
+      max-width: 100%;
+      overflow: visible;
+      font-size: $size-title-popup;
+      font-weight: $weight-highlight;
+    }
+    .css-sau84p {
+      display: inline-block;
+      font-family: Poppins;
+      width: auto;
+      text-overflow: initial;
+      max-width: 100%;
+      overflow: visible;
+      margin-top: 16px;
+      font-size: $size-normal;
+    }
+  }
+}

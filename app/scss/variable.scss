@@ -1,7 +1,9 @@
-$size-highlight: 30px;
-$size-large: 20px;
-$size-normal: 14px;
-$size-small: 11.998px;
+$size-highlight: 2.857em;
+$size-large: 1.714em;;
+$size-normal: 1em;
+$size-small: 0.857em;
+
+$size-title-popup: 1.429rem;
 
 $bg-secondary: rgba(51, 51, 51, 0.03);
 
@@ -17,6 +19,7 @@ $color-text-highlight: rgb(64, 181, 168);
 
 $main-color: #FFFFFFFF;
 $secondary-color: #4d8aba;
-$active-color: #005d8b;
+$active-color: rgb(64, 181, 168);
 
 
+$max-with-container: 1320px
