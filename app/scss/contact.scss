@@ -3,7 +3,7 @@
 #main.contact{
   .css-1w5npbh{
 
-    border: 0px solid rgb(255, 255, 255);
+    border: 0 solid rgb(255, 255, 255);
     display: flex;
     flex: initial;
     flex-flow: column wrap;
@@ -13,7 +13,7 @@
     margin-top: 48px;
     .css-13sacn9{
       display: inline-block;
-      font-family: Poppins;
+      font-family: $font-family-base-web;
       width: auto;
       text-overflow: initial;
       max-width: 100%;
@@ -23,7 +23,7 @@
     }
     .css-sau84p {
       display: inline-block;
-      font-family: Poppins;
+      font-family: $font-family-base-web;
       width: auto;
       text-overflow: initial;
       max-width: 100%;

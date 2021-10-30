@@ -4,13 +4,15 @@
   .tour-category-image-header {
     img {
       width: 100%;
+      max-height: 500px;
+      object-fit: cover;
     }
   }
 
   .container {
     .css-1aanchd {
       .css-jjshw6 {
-        border-top: 10px solid #40b5a8;
+        border-top: 10px solid $active-color;
         //padding: 0 20px;
         margin-top: unset;
         background: white !important;
@@ -25,10 +27,10 @@
               .head-title {
                 text-align: center;
                 font-size: $size-large;
-                border-bottom: 2px solid #40b5a8;
+                border-bottom: 2px solid $active-color;
                 margin-bottom: 20px;
                 line-height: $size-large * 2;
-                color: #40b5a8;
+                color: $active-color;
                 text-transform: uppercase;
               }
             }
@@ -49,12 +51,12 @@
 
               > nav.tab-head {
                 .nav-tabs {
-                  border-color: #40b5a8;
+                  border-color: $active-color;
 
                   .nav-link {
                     outline: unset !important;
                     border: unset !important;
-                    padding: 15px 25px;
+                    padding: 15px $padding-top-block;
                     color: black;
                     border-radius: unset;
                     font-size: $size-normal;
@@ -73,7 +75,7 @@
                   }
 
                   .active {
-                    background: #40b5a8;
+                    background: $active-color;
                     color: white;
                   }
                 }
@@ -82,7 +84,7 @@
               > div.tab-content {
                 > .tab-pane {
                   > .post-highlight {
-                    margin-top: 24px;
+                    margin-top: $padding-top-block;
 
                     .post-thumb {
                       img {
@@ -108,7 +110,7 @@
                         overflow: hidden;
                         text-overflow: ellipsis;
                         display: -webkit-box;
-                        line-height: 24px;
+                        line-height: $padding-top-block;
                         -webkit-line-clamp: 3;
                         -webkit-box-orient: vertical;
                       }
@@ -118,7 +120,7 @@
                   > .post-child {
 
                     .post-detail {
-                      margin-top: 24px;
+                      margin-top: $padding-top-block;
 
                       > div {
                         background: #efefef;

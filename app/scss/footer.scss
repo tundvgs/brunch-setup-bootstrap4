@@ -1,6 +1,7 @@
 @import "variable";
 
 #footer {
+  border-top: 2px solid $active-color;
   width: 100%;
   z-index: 4;
   //margin-top: 32px;
@@ -9,16 +10,25 @@
   padding-bottom: 30px;
 
   .container {
+    width: 100%;
     border: 0px solid rgb(255, 255, 255);
     display: flex;
     flex: initial;
     flex-flow: row wrap;
-    width: auto;
     background: transparent;
     margin-left: auto;
     margin-right: auto;
     padding: 0px 24px;
     max-width: $max-with-container;
+
+    .footer-slide-logo{
+      width: 100%;
+      img{
+        width: 100%;
+        padding: 10px;
+        height: auto;
+      }
+    }
     .css-1tuc3cn {
       border: 0px solid rgb(255, 255, 255);
       display: flex;
@@ -48,7 +58,6 @@
           max-width: 100%;
           background: transparent;
           padding-left: 0px;
-          padding-right: 0px;
 
           .outer {
             padding: 0px;
@@ -72,9 +81,9 @@
                 justify-content: space-between;
 
                 .css-1pyg0zs {
-                  color: rgb(66, 67, 70);
-                  margin-bottom: 0px;
-                  font-size: 1rem;
+                  color: $active-color;
+                  margin-bottom: 0;
+                  font-size: $size-normal !important;
                   font-weight: 600;
                   line-height: 1.5;
                 }
@@ -97,11 +106,10 @@
                 font-size: 1rem;
                 font-weight: 400;
                 line-height: 1.5;
-                display: block;
               }
 
               .css-d9fh8s {
-                border: 0px solid rgb(255, 255, 255);
+                border: 0 solid rgb(255, 255, 255);
                 display: flex;
                 flex: initial;
                 flex-flow: row wrap;
@@ -141,7 +149,7 @@
 
       .css-1c7zdkb {
         display: inline-block;
-        font-family: Poppins;
+        font-family: $font-family-base-web;
         width: auto;
         text-overflow: initial;
         max-width: 100%;
@@ -175,7 +183,7 @@
         justify-content: flex-start;
 
         .css-o00lgw {
-          border: 0px solid rgb(255, 255, 255);
+          border: unset;
           display: flex;
           flex: initial;
           flex-flow: row wrap;
@@ -210,7 +218,37 @@
           align-items: center;
 
           .css-1aduecp {
-            border: 0px solid white;
+            border: 0 solid #fff;
+            display: flex;
+            flex: initial;
+            flex-flow: row wrap;
+            width: auto;
+            max-width: 100%;
+            background: 0 0;
+            position: relative;
+
+            button {
+              text-align: center;
+              border-radius: 0px !important;
+              background: transparent !important;
+              border-color: transparent !important;
+              box-shadow: none !important;
+              .css-cgtp9j {
+                display: inline-block;
+                width: auto;
+                text-overflow: initial;
+                max-width: 100%;
+                overflow: visible;
+                color: rgb(66, 67, 70);
+                text-transform: uppercase;
+                font-size: 1rem;
+                font-weight: 500;
+                line-height: 1.5;
+              }
+            }
+          }
+
+          .css-1vxuv32 {
             display: flex;
             flex: initial;
             flex-flow: row wrap;
@@ -218,19 +256,10 @@
             max-width: 100%;
             background: transparent;
             position: relative;
-
-            .css-o00lgw {
-              border: 0px solid white;
-              display: flex;
-              flex: initial;
-              flex-flow: row wrap;
-              width: auto;
-              max-width: 100%;
-              background: transparent;
-            }
-          }
-          .css-1vxuv32 {
-            .css-o00lgw {
+            border: 0 none rgb(255, 255, 255);
+            padding: 8px;
+            margin-right: -8px;
+            button {
               text-align: center;
               border-radius: 0px !important;
               background: transparent !important;
@@ -241,10 +270,8 @@
               flex-flow: row wrap;
               width: auto;
               max-width: 100%;
-
               .css-cgtp9j {
                 display: inline-block;
-                font-family: Poppins;
                 width: auto;
                 text-overflow: initial;
                 max-width: 100%;
@@ -273,8 +300,14 @@
 
 @media only screen and (max-width: 576px) {
   .css-g3c9sp {
-    width: 100% !important;
+    width: 50% !important;
     flex-basis: 20%;
     padding-right: 16px;
+    .outer{
+      padding: 0 10px;
+      .css-7blzqa{
+        margin-bottom: $size-small;
+      }
+    }
   }
 }

@@ -1,3 +1,5 @@
+@import "variable";
+
 #listing{
   .listing {
     //border: 0px solid rgb(255, 255, 255);
@@ -135,7 +137,7 @@
             width: auto;
             max-width: 100%;
             background: transparent;
-            color: rgb(36, 180, 120);
+            color:$active-color;
             margin-top: auto;
           }
         }
@@ -185,7 +187,7 @@
 
               span {
                 display: inline-block;
-                font-family: Poppins;
+                font-family: $font-family-base-web;
                 width: auto;
                 text-overflow: initial;
                 max-width: 100%;
@@ -234,7 +236,7 @@
 
                 .content__left-bottom-content-price-to-price {
                   display: inline-block;
-                  font-family: Poppins;
+                  font-family: $font-family-base-web;
                   width: auto;
                   text-overflow: initial;
                   max-width: 100%;
@@ -247,7 +249,7 @@
 
                   .content__left-bottom-content-price-to-price-text {
                     display: inline-block;
-                    font-family: Poppins;
+                    font-family: $font-family-base-web;
                     width: auto;
                     text-overflow: initial;
                     max-width: 100%;
@@ -262,7 +264,7 @@
 
                     .content__left-bottom-content-price-to-price-text-from {
                       display: inline-block;
-                      font-family: Poppins;
+                      font-family: $font-family-base-web;
                       width: auto;
                       text-overflow: initial;
                       max-width: 100%;
@@ -295,7 +297,7 @@
 
               .content__left-bottom-content-description-data {
                 display: inline-block;
-                font-family: Poppins;
+                font-family: $font-family-base-web;
                 width: auto;
                 text-overflow: initial;
                 max-width: 100%;
@@ -325,7 +327,7 @@
 
               span {
                 display: inline-block;
-                font-family: Poppins;
+                font-family: $font-family-base-web;
                 width: auto;
                 text-overflow: initial;
                 max-width: 100%;
@@ -340,7 +342,7 @@
   .site-bar{
     .site-bar--title{
       display: inline-block;
-      font-family: Poppins;
+      font-family: $font-family-base-web;
       width: auto;
       text-overflow: initial;
       max-width: 100%;
@@ -365,7 +367,7 @@
           text-decoration: none;
           span{
             display: inline-block;
-            font-family: Poppins;
+            font-family: $font-family-base-web;
             width: auto;
             text-overflow: initial;
             max-width: 100%;

@@ -1,0 +1,139 @@
+@import "variable";
+
+#main.detail-blog{
+  .container{
+    width: 100%;
+    .css-1aanchd{
+      border: 0px solid rgb(255, 255, 255);
+      display: flex;
+      flex-shrink: initial;
+      flex-basis: initial;
+      flex-flow: column nowrap;
+      width: 100%;
+      max-width: $max-with-container;
+      background: transparent;
+      margin-left: auto;
+      margin-right: auto;
+      -webkit-box-align: center;
+      align-items: center;
+      -webkit-box-flex: 1;
+      flex-grow: 1;
+      position: relative;
+      .css-14unzv4{
+        border: 0px solid rgb(255, 255, 255);
+        display: flex;
+        flex: initial;
+        flex-flow: row wrap;
+        width: 100%;
+        max-width: 100%;
+        background: transparent;
+        margin-top: 44px;
+        position: relative;
+        >.breadcrumb{
+          width: 100%;
+          margin-bottom: $padding-top-block;
+        }
+        .css-n486ao{
+          width: 100%;
+          .content__blog{
+            .css-1lordee{
+              border: 0px solid rgb(255, 255, 255);
+              display: flex;
+              flex: initial;
+              flex-flow: row wrap;
+              width: auto;
+              max-width: 100%;
+              background: transparent;
+              .css-1upn1ww{
+                display: inline-block;
+                width: auto;
+                text-overflow: initial;
+                max-width: 100%;
+                overflow: visible;
+                color: rgb(66, 67, 70);
+                text-align: left;
+                font-size: $size-title-popup;
+                font-weight: 600;
+                line-height: 1.4;
+              }
+            }
+            .css-dzxil6{
+              border: 0px solid rgb(255, 255, 255);
+              display: flex;
+              flex: initial;
+              flex-flow: row nowrap;
+              width: auto;
+              max-width: 100%;
+              background: transparent;
+              margin-top: 4px;
+              overflow: hidden;
+              .css-eopc5m{
+                display: inline-block;
+                width: auto;
+                text-overflow: ellipsis;
+                max-width: 100%;
+                overflow: hidden;
+                color: rgb(66, 67, 70);
+                white-space: nowrap;
+                font-size: $size-normal;
+                font-weight: 400;
+                line-height: 1.5;
+                margin-right: 4px;
+              }
+            }
+            .css-ds90lv{
+              margin-top: 24px;
+            }
+          }
+          .sidebar{
+            #search{
+              .wrapper {
+                width: 100%;
+                max-width: 31.25rem;
+              }
+
+              .label {
+                font-size: .625rem;
+                font-weight: 400;
+                text-transform: uppercase;
+                letter-spacing: +1.3px;
+                margin-bottom: 1rem;
+              }
+
+              .searchBar {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+              }
+
+              #searchQueryInput {
+                width: 100%;
+                height: 2.8rem;
+                background: #f5f5f5;
+                outline: none;
+                border: none;
+                border-radius: 1.625rem;
+                padding: 0 3.5rem 0 1.5rem;
+                font-size: 1rem;
+              }
+
+              #searchQuerySubmit {
+                width: 3.5rem;
+                height: 2.8rem;
+                margin-left: -3.5rem;
+                background: none;
+                border: none;
+                outline: none;
+              }
+
+              #searchQuerySubmit:hover {
+                cursor: pointer;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

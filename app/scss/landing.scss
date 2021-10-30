@@ -4,6 +4,7 @@
 ::-webkit-scrollbar {
   width: 7px;
 }
+
 a {
   text-decoration: unset;
   color: unset;
@@ -45,8 +46,8 @@ body {
   line-height: unset;
 
   .css-1baj6ir {
-    font-family: Poppins;
-    border: 0px solid rgb(255, 255, 255);
+    font-family: $font-family-base-web;
+    border: unset;
     display: flex;
     flex: initial;
     flex-flow: row wrap;
@@ -159,9 +160,9 @@ body {
 }
 
 
-
 #main {
-  font-family: Poppins;
+  font-family: $font-family-base-web;
+
   .container {
     overflow-x: hidden;
     border: 0 solid rgb(255, 255, 255);
@@ -170,9 +171,9 @@ body {
     flex-flow: row wrap;
     width: auto;
     max-width: 100%;
-    background: transparent;
-    padding-left: 24px;
-    padding-right: 24px;
+    background: white;
+    padding-left: $padding-top-block;
+    padding-right: $padding-top-block;
     padding-bottom: 44px;
 
     .css-1utvz5n {
@@ -220,7 +221,7 @@ body {
             margin-bottom: 16px;
 
             .css-yhbmey {
-              color: rgb(64, 181, 168);
+              color: $active-color;
               font-size: 1.714rem;
               font-weight: 600;
               line-height: 1.4;
@@ -400,7 +401,7 @@ body {
                                 align-items: center;
 
                                 .css-3nne2 {
-                                  border: 0px solid rgb(255, 255, 255);
+
                                   display: flex;
                                   flex: initial;
                                   flex-flow: row wrap;
@@ -452,7 +453,7 @@ body {
                                 text-overflow: initial;
                                 max-width: 100%;
                                 overflow: visible;
-                                color: rgb(64, 181, 168);
+                                color: $active-color;
 
                                 .css-1f4vevp {
                                   display: inline-block;
@@ -499,13 +500,13 @@ body {
                                 flex-flow: row wrap;
                                 width: auto;
                                 max-width: 100%;
-                                background: rgb(64, 181, 168);
+                                background: $active-color;
                                 padding-left: 4px;
                                 padding-right: 4px;
                                 -webkit-box-align: center;
                                 align-items: center;
                                 height: 16px;
-                                border: 1px solid rgb(64, 181, 168);
+                                border: 1px solid $active-color;
                                 box-shadow: none;
                                 min-width: 20px;
                                 -webkit-box-pack: center;
@@ -668,7 +669,7 @@ body {
                             top: -16px;
 
                             .css-1osh5wu {
-                              border: 0px solid rgb(255, 255, 255);
+
                               display: flex;
                               flex: initial;
                               flex-flow: row wrap;
@@ -705,7 +706,7 @@ body {
                       }
 
                       .css-iyum6i {
-                        border: 0px solid rgb(255, 255, 255);
+
                         display: flex;
                         flex: initial;
                         flex-flow: row wrap;
@@ -720,7 +721,7 @@ body {
                         overflow: hidden;
 
                         .css-ket4gg {
-                          border: 0px solid rgb(255, 255, 255);
+
                           display: flex;
                           flex: initial;
                           flex-flow: row wrap;
@@ -732,7 +733,7 @@ body {
                           position: relative;
 
                           .css-1n5xxcx {
-                            border: 0px solid rgb(255, 255, 255);
+
                             display: flex;
                             flex: initial;
                             flex-flow: row wrap;
@@ -751,7 +752,7 @@ body {
                         }
 
                         .css-wpmd7j {
-                          border: 0px solid rgb(255, 255, 255);
+
                           display: flex;
                           flex: initial;
                           flex-flow: row wrap;
@@ -762,7 +763,7 @@ body {
 
                           .css-o00wv8 {
                             display: inline-block;
-                            font-family: Poppins;
+                            font-family: $font-family-base-web;
                             width: auto;
                             text-overflow: ellipsis;
                             max-width: 100%;
@@ -777,7 +778,7 @@ body {
                       }
 
                       .css-x3bh55 {
-                        border: 0px solid rgb(255, 255, 255);
+
                         flex: initial;
                         flex-flow: column nowrap;
                         width: auto;
@@ -796,7 +797,7 @@ body {
                         }
 
                         .css-5s9pb6 {
-                          border: 0px solid rgb(255, 255, 255);
+
                           display: flex;
                           flex: initial;
                           flex-flow: row wrap;
@@ -812,7 +813,7 @@ body {
                             width: 100%;
 
                             .css-13dtwd7 {
-                              border: 0px solid rgb(255, 255, 255);
+
                               display: flex;
                               flex: initial;
                               flex-flow: row wrap;
@@ -824,7 +825,7 @@ body {
                               position: relative;
 
                               .css-1n5xxcx {
-                                border: 0px solid rgb(255, 255, 255);
+
                                 display: flex;
                                 flex: initial;
                                 flex-flow: row wrap;
@@ -849,7 +850,7 @@ body {
                             }
 
                             .css-1ky0z9v {
-                              border: 0px solid rgb(255, 255, 255);
+
                               display: flex;
                               flex: initial;
                               flex-flow: row wrap;
@@ -868,7 +869,7 @@ body {
 
                               .css-15mimyx {
                                 display: inline-block;
-                                font-family: Poppins;
+                                font-family: $font-family-base-web;
                                 width: auto;
                                 text-overflow: initial;
                                 max-width: 100%;
@@ -884,19 +885,19 @@ body {
                         }
 
                         .css-1b8vrdv {
-                          border: 0px solid rgb(255, 255, 255);
+
                           display: flex;
                           flex: initial;
                           flex-flow: column wrap;
                           width: auto;
                           max-width: 100%;
                           background: transparent;
-                          margin: 24px 16px;
+                          margin: $padding-top-block 16px;
                           align-items: flex-start;
 
                           .css-16lo41c {
                             display: inline-block;
-                            font-family: Poppins;
+                            font-family: $font-family-base-web;
                             width: auto;
                             text-overflow: ellipsis;
                             max-width: 100%;
@@ -910,12 +911,12 @@ body {
 
                           .css-g6dazk {
                             display: inline-block;
-                            font-family: Poppins;
+                            font-family: $font-family-base-web;
                             width: auto;
                             text-overflow: initial;
                             max-width: 100%;
                             overflow: visible;
-                            color: rgb(64, 181, 168);
+                            color: $active-color;
                             font-size: $size-normal;
                             font-weight: 400;
                             line-height: 1.5;
@@ -929,14 +930,17 @@ body {
 
               .landing--tour-data {
                 margin-bottom: $size-highlight;
+
                 &:hover {
-                  .landing--tour-item{
-                    .available{
-                      &:after{
-                       display: none;
+                  .landing--tour-item {
+                    .available {
+                      &:after {
+                        display: none;
                       }
                     }
-                    box-shadow: rgb(0 0 0 / 80%) 0px 7px 40px 0px;
+
+                    box-shadow: rgb(0 0 0 / 80%) 0 7px 40px 0;
+
                     .landing--tour-item_content {
                       .time, .departure-date, .price, .detail {
                         opacity: 1;
@@ -955,11 +959,12 @@ body {
                     }
 
                     .title {
-                      //color: #40b5a8;
+                      //color: $active-color;
                       font-weight: $weight-highlight;
                     }
                   }
                 }
+
                 .landing--tour-item {
                   overflow: hidden;
                   //margin-bottom: 48px;
@@ -984,8 +989,9 @@ body {
                       transform: scale(1.15);
                     }
                   }
-                  .available{
-                    &:after{
+
+                  .available {
+                    &:after {
                       content: "Đang nhận khách";
                       position: absolute;
                       top: 0;
@@ -995,7 +1001,7 @@ body {
                       text-align: center;
                       width: 46px;
                       padding: 5px 4px;
-                      background: rgb(64, 181, 168);
+                      background: $active-color;
                       color: white;
                       border-radius: 0 0 10px 10px;
                     }
@@ -1030,9 +1036,9 @@ body {
                     }
 
 
-
                     .detail {
                       margin-top: 48px;
+
                       a {
                         cursor: pointer;
                         font-weight: 400;
@@ -1043,12 +1049,12 @@ body {
                         justify-content: center;
                         height: 48px;
                         border-radius: 8px;
-                        border: 0px none #424346;
-                        background-color: #40b5a8;
+                        border: 0 none #424346;
+                        background-color: $active-color;
                         pointer-events: auto;
                         font-size: 14px;
                         line-height: 1.5;
-                        margin-right: 0px !important;
+                        margin-right: 0 !important;
                         padding: 10px 20px;
                         color: white;
                       }
@@ -1078,19 +1084,18 @@ body {
 
             .css-lhv4pp {
               position: relative;
-              border: 0px solid rgb(255, 255, 255);
+
               display: flex;
               flex: initial;
               flex-flow: row wrap;
               width: 100%;
               background: transparent;
               max-width: $max-with-container;
-              padding-bottom: 0px;
-              box-shadow: rgb(0 0 0 / 15%) 0px 7px 40px 0px;
-              border-radius: 0px 10px 10px;
+              padding-bottom: 0;
+              box-shadow: rgb(0 0 0 / 15%) 0 7px 40px 0;
+              border-radius: 10px;
 
               .css-yqvd6h {
-                border: 0px solid rgb(255, 255, 255);
                 display: flex;
                 flex: initial;
                 flex-flow: row wrap;
@@ -1099,10 +1104,10 @@ body {
                 background: transparent;
                 position: absolute;
                 bottom: 100%;
-                left: 0px;
+                left: 0;
 
                 .css-1w4l06j {
-                  box-shadow: rgb(0 0 0 / 15%) 0px 0px 20px 0px;
+                  box-shadow: rgb(0 0 0 / 15%) 0 0 20px 0;
 
                   &:first-child {
                     border-top-left-radius: 10px;
@@ -1113,7 +1118,6 @@ body {
                   }
 
                   //box-shadow: rgb(0 0 0 / 15%) 0px 7px 40px 0px;
-                  border: 0px solid rgb(255, 255, 255);
                   display: flex;
                   flex: initial;
                   flex-flow: row nowrap;
@@ -1127,7 +1131,7 @@ body {
 
                   .css-1nxveg5 {
                     display: inline-block;
-                    font-family: Poppins;
+                    font-family: $font-family-base-web;
                     width: auto;
                     text-overflow: initial;
                     max-width: 100%;
@@ -1148,7 +1152,7 @@ body {
                     border-top-right-radius: 10px;
                   }
 
-                  border: 0px solid rgb(255, 255, 255);
+
                   display: flex;
                   flex: initial;
                   flex-flow: row nowrap;
@@ -1163,7 +1167,7 @@ body {
 
                   .css-1nxveg5 {
                     display: inline-block;
-                    font-family: Poppins;
+                    font-family: $font-family-base-web;
                     width: auto;
                     text-overflow: initial;
                     max-width: 100%;
@@ -1177,16 +1181,16 @@ body {
               }
 
               .css-64okvy {
-                z-index: 999;
+                z-index: 1;
                 border-radius: 10px;
-                box-shadow: rgb(0 0 0 / 15%) 0px 7px 40px 0px;
-                padding: 24px;
-                margin: 0px;
+                box-shadow: rgb(0 0 0 / 15%) 0 7px 40px 0;
+                padding: $padding-top-block;
+                margin: 0;
                 background-color: rgb(255, 255, 255);
                 width: 100%;
 
                 .css-txac2g {
-                  border: 0px solid rgb(255, 255, 255);
+
                   display: flex;
                   flex: initial;
                   flex-flow: column wrap;
@@ -1233,7 +1237,7 @@ body {
                       }
 
                       .css-shfm70 {
-                        border: 0px solid rgb(255, 255, 255);
+
                         display: flex;
                         flex: initial;
                         flex-flow: row wrap;
@@ -1244,7 +1248,7 @@ body {
                         position: relative;
 
                         .css-cvb0hx {
-                          border: 0px solid rgb(255, 255, 255);
+                          border: unset;
                           display: flex;
                           flex: initial;
                           flex-flow: row wrap;
@@ -1264,7 +1268,7 @@ body {
                           background: rgba(255, 255, 255, 0) !important;
 
                           .css-1x8exxx {
-                            font-family: Poppins;
+                            font-family: $font-family-base-web;
                             width: auto;
                             color: rgb(144, 144, 144);
                             font-size: $size-small;
@@ -1307,7 +1311,7 @@ body {
                     height: 48px;
                     border-radius: 8px;
                     border: 0px none rgb(66, 67, 70);
-                    background-color: rgb(64, 181, 168);
+                    background-color: $active-color;
                     pointer-events: auto;
                     font-size: $size-normal;
                     line-height: 1.5;
@@ -1323,12 +1327,12 @@ body {
         .news-right, .news-left {
           > nav.tab-head {
             .nav-tabs {
-              border-color: #40b5a8;
+              border-color: $active-color;
 
               .nav-link {
                 outline: unset !important;
                 border: unset !important;
-                padding: 15px 25px;
+                padding: 15px $padding-top-block;
                 color: black;
                 border-radius: unset;
                 font-size: $size-normal;
@@ -1347,7 +1351,7 @@ body {
               }
 
               .active {
-                background: #40b5a8;
+                background: $active-color;
                 color: white;
               }
             }
@@ -1358,7 +1362,7 @@ body {
           > div.tab-content {
             > div.tab-pane {
               > .post-highlight {
-                margin-top: 24px;
+                margin-top: $padding-top-block;
 
                 .post-thumb {
                   img {
@@ -1372,8 +1376,11 @@ body {
 
                 .post-data {
                   .post-data-title {
-                    span {
-                      font-size: $size-normal;
+                    a {
+                      span {
+                        font-size: $size-title-popup;
+                        font-weight: $weight-highlight;
+                      }
                     }
                   }
 
@@ -1384,7 +1391,7 @@ body {
                     overflow: hidden;
                     text-overflow: ellipsis;
                     display: -webkit-box;
-                    line-height: 24px;
+                    line-height: $padding-top-block;
                     -webkit-line-clamp: 3;
                     -webkit-box-orient: vertical;
                   }
@@ -1394,7 +1401,7 @@ body {
               > .post-child {
 
                 .post-detail {
-                  margin-top: 24px;
+                  margin-top: $padding-top-block;
 
                   > div {
                     background: #efefef;
@@ -1419,6 +1426,7 @@ body {
                         line-height: 15px;
                         -webkit-line-clamp: 2;
                         -webkit-box-orient: vertical;
+
                         span {
                           font-size: $size-normal;
                         }
@@ -1435,7 +1443,7 @@ body {
           > div.tab-content {
             > div.tab-pane {
               > .post-highlight {
-                margin-top: 24px;
+                margin-top: $padding-top-block;
                 position: relative;
 
                 .post-thumb {
@@ -1469,11 +1477,11 @@ body {
                     text-align: center;
 
                     a {
-                      font-weight: $weight-large;
+                      font-weight: $weight-highlight;
                       color: white;
 
                       &:hover {
-                        color: #40b5a8;
+                        //color: $active-color;
                       }
 
                       span {
@@ -1487,7 +1495,7 @@ body {
 
               > .post-child {
                 .post-detail {
-                  margin-top: 24px;
+                  margin-top: $padding-top-block;
 
                   > div {
                     background: #efefef;
@@ -1527,18 +1535,21 @@ body {
           }
         }
       }
-      .customers{
-        .init-4{
-          .css-16lo41c{
-            font-size: $size-large !important;
+
+      .customers {
+        .init-4 {
+          .css-16lo41c {
+            font-size: $size-title-popup !important;
             text-align: center;
             width: 100% !important;
             font-weight: $weight-highlight !important;
           }
-          .css-1wxbk53{
+
+          .css-1wxbk53 {
             width: 100%;
             text-align: center;
-            .css-7thsyr{
+
+            .css-7thsyr {
               border: 0 solid white;
               display: inline-flex;
               flex: initial;
@@ -1550,7 +1561,8 @@ body {
               padding-bottom: 1px;
               -webkit-box-align: center;
               align-items: center;
-              .css-3nne2{
+
+              .css-3nne2 {
                 border: 0px solid white;
                 display: flex;
                 flex: initial;
@@ -1563,7 +1575,8 @@ body {
               }
             }
           }
-          .description{
+
+          .description {
             text-align: center;
             font-size: $size-normal;
             //line-height: 1em;
@@ -1610,7 +1623,27 @@ body {
     width: 100%;
   }
 
-  .css-gcc11p{
+  .css-gcc11p {
     font-size: $size-large !important;
+  }
+
+  #main .container .css-1utvz5n .css-12qluct .news-right > nav.tab-head .nav-tabs .nav-link {
+    width: 50% !important;
+  }
+  #main .container .css-1utvz5n .css-12qluct .css-9993us .css-1vkfqc9 .css-1m9ypp0 .landing--tour-data .landing--tour-item .landing--tour-item_content {
+    .time, .departure-date, .price, .detail {
+      > div {
+        text-align: center !important;
+      }
+    }
+  }
+}
+
+@media (max-width: 720px) {
+  #headers {
+    .css-1h3ylvg, .css-az81sm {
+      display: none;
+
+    }
   }
 }

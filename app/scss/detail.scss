@@ -1,11 +1,20 @@
 @import "variable";
 
+select{
+  background: unset !important;
+}
+
+button:focus{
+  box-shadow: unset !important;
+}
+
 body {
   font-size: 14px;
 }
 
 #main.tour-detail {
   .container {
+    width: 100%;
     .css-1aanchd {
       border: 0px solid rgb(255, 255, 255);
       display: flex;
@@ -31,7 +40,7 @@ body {
         width: 100%;
         max-width: 100%;
         background: transparent;
-        margin-bottom: 24px;
+        margin-bottom: $padding-top-block;
         margin-top: 36px;
 
         .css-12n4x7u {
@@ -80,7 +89,7 @@ body {
 
                         .css-1upn1ww {
                           display: inline-block;
-                          font-family: Poppins;
+                          font-family: $font-family-base-web;
                           width: auto;
                           text-overflow: initial;
                           max-width: 100%;
@@ -107,7 +116,7 @@ body {
 
                     .css-eopc5m {
                       display: inline-block;
-                      font-family: Poppins;
+                      font-family: $font-family-base-web;
                       width: auto;
                       text-overflow: ellipsis;
                       max-width: 100%;
@@ -135,7 +144,7 @@ body {
             }
 
             .css-1504npq {
-              margin-top: 24px;
+              margin-top: $padding-top-block;
 
               iframe {
                 width: 100%;
@@ -143,15 +152,16 @@ body {
               }
 
               .nav-tabs {
-                border-color: #40b5a8;
+                border-color: $active-color;
 
                 .nav-item {
                   .nav-link {
-                    font-size: $size-large;
+                    font-size: $size-normal;
                     color: white;
-                    text-transform: uppercase;
+                    padding: 15px $padding-top-block;
+                    text-transform: capitalize;
                     border: unset;
-                    background-color: #40b5a8;
+                    background-color: $active-color;
                     border-radius: 10px 10px 0 0;
                   }
                 }
@@ -165,7 +175,7 @@ body {
 
               > .tab-content {
                 margin: unset;
-                padding: 0 24px 24px 24px;
+                padding: 0 $padding-top-block $padding-top-block $padding-top-block;
 
                 .tab-pane {
                   h3 {
@@ -180,7 +190,7 @@ body {
                     font-weight: 600;
                     line-height: 1.4;
                     padding-bottom: 14px;
-                    border-width: 0px 0px 1px;
+                    border-width: 0 0 1px;
                     border-style: solid;
                     border-color: white white rgb(235, 235, 235);
                     border-image: initial;
@@ -188,7 +198,7 @@ body {
 
                   p {
                     display: inline-block;
-                    font-family: Poppins;
+                    font-family: $font-family-base-web;
                     width: auto;
                     text-overflow: ellipsis;
                     max-width: 100%;
@@ -202,16 +212,19 @@ body {
                 }
 
                 .lich-trinh {
-                  padding-top: 24px;
-
+                  padding-top: $padding-top-block;
+                  margin-bottom: $padding-top-block;
+                  //overflow-y: auto;
                   #v-pills-tab {
                     color: black;
                     margin: 0;
-                    border-right: 1px solid #40b5a8;
+                    border-right: 1px solid $active-color;
 
                     button {
                       position: relative;
                       font-size: $size-normal;
+                      color: #2c3034;
+                      border-radius: unset;
                     }
 
                     .active {
@@ -219,37 +232,39 @@ body {
                       background: unset;
                       background: #eee;
                       cursor: default;
-                      color: #40b5a8;
+                      color: $active-color;
                       position: relative;
                       border-radius: unset;
 
                       &:after {
                         right: 0;
                         top: 50%;
-                        border: solid transparent;
                         content: " ";
                         height: 0;
                         width: 0;
                         position: absolute;
                         pointer-events: none;
                         border-color: rgba(255, 255, 255, 0);
-                        border-right-color: #40b5a8;
+                        border-right-color: $active-color;
                         border-width: 13px;
                         margin-top: -16px;
                       }
                     }
                   }
+                  .tab-content{
+                    overflow-y: auto;
+                  }
                 }
 
                 .main-sightseeing {
-                  background-color: #e8e8e8;
-                  padding-top: 24px;
-
+                  background-color: $active-color;
+                  padding-top: $padding-top-block;
+                  margin-bottom: $padding-top-block;
                   .title {
                     text-overflow: initial;
                     max-width: 100%;
                     overflow: visible;
-                    color: rgb(66, 67, 70);
+                    color: white;
                     text-align: left;
                     font-size: $size-large;
                     font-weight: 600;
@@ -260,14 +275,19 @@ body {
                     border-color: white white rgb(235, 235, 235);
                     border-image: initial;
                   }
-
                   .content {
                     font-size: $size-normal;
+                    color: white;
                   }
                 }
               }
 
               .detail {
+                width: 100%;
+                margin: 0;
+                .price-regulations, .pricing{
+                 padding-top: 1em;
+                }
                 .price-regulations {
                   .css-1upn1ww {
                     display: block;
@@ -275,7 +295,7 @@ body {
                     text-overflow: initial;
                     max-width: 100%;
                     overflow: visible;
-                    color: rgb(66, 67, 70);
+                    color: $active-color;
                     text-align: left;
                     font-size: $size-large;
                     font-weight: 600;
@@ -299,13 +319,17 @@ body {
                 }
 
                 .pricing {
+                  border: 4px solid $color-text-highlight;
+                  border-radius: 10px;
+                  //background-color: $color-text-highlight;
+                  color: black;
                   .css-1upn1ww {
                     display: block;
                     width: auto;
                     text-overflow: initial;
                     max-width: 100%;
                     overflow: visible;
-                    color: rgb(66, 67, 70);
+                    color: black;
                     text-align: left;
                     font-size: $size-large;
                     font-weight: 600;
@@ -319,7 +343,7 @@ body {
 
                   > ul {
                     margin-top: 14px;
-
+                    padding: 0;
                     > li {
                       list-style-type: none;
                       font-size: $size-normal;
@@ -334,17 +358,18 @@ body {
                         border-radius: 8px;
                         transition: all 500ms ease 0ms;
                         cursor: pointer;
-                        background: rgb(64, 181, 168);
+                        background: $active-color;
                         display: block;
                         width: 100%;
                         text-align: center;
                         outline: rgb(66, 67, 70) none 0px !important;
                         text-decoration: none !important;
                         color: rgb(255, 255, 255) !important;
+                        margin-bottom: $padding-top-block;
 
                         span {
                           display: inline-block;
-                          font-family: Poppins;
+                          font-family: $font-family-base-web;
                           width: auto;
                           text-overflow: initial;
                           max-width: 100%;
@@ -355,7 +380,7 @@ body {
 
                       .pricing-detail {
                         font-size: $size-large !important;
-                        font-weight: $weight-highlight;
+                        font-weight: $size-title-popup;
 
                         span {
                           font-size: $size-normal;
@@ -378,12 +403,13 @@ body {
                       font-size: $size-normal;
                       display: inline-block;
                       padding: 5px 10px;
-                      background: #40b5a8;
+                      background: $active-color;
                       color: white;
                     }
 
                     table {
                       font-size: $size-normal;
+                      color: black;
                     }
                   }
                 }
@@ -408,17 +434,20 @@ body {
 
             .service-tour {
               .service-tour-tabs {
+                border-radius: unset !important;
                 border-width: 0px 0px 1px;
                 border-style: solid;
-                border-color: #40b5a8;
+                border-color: $active-color;
                 border-image: initial;
 
                 a {
-                  &:hover {
-                    background: #f5f5f5;
-                    border-radius: unset;
-                  }
+                  border-radius: unset !important;
 
+                  //&:hover {
+                  //  background: #f5f5f5;
+                  //  border-radius: unset;
+                  //}
+                  -webkit-appearance: unset !important;
                   border: none;
                   background: unset;
                   color: black;
@@ -428,29 +457,15 @@ body {
                 }
 
                 .active {
-                  &:after {
-                    top: 100%;
-                    left: 50%;
-                    border: solid transparent;
-                    content: " ";
-                    height: 0;
-                    width: 0;
-                    position: absolute;
-                    pointer-events: none;
-                    border-color: rgba(240, 89, 43, 0);
-                    border-top-color: #40b5a8;
-                    border-width: 10px;
-                    margin-left: -10px;
-                  }
-
-                  color: #40b5a8;
+                  color: white;
+                  background: $active-color;
                 }
               }
 
               .service-tour-tab-content {
-                margin-top: 24px;
+                margin-top: $padding-top-block;
                 display: inline-block;
-                font-family: Poppins;
+                font-family: $font-family-base-web;
                 width: auto;
                 text-overflow: ellipsis;
                 max-width: 100%;
@@ -511,12 +526,12 @@ body {
             width: 100%;
             max-width: 100%;
             background: transparent;
-            margin-bottom: 24px;
+            margin-bottom: $padding-top-block;
             -webkit-box-pack: center;
             justify-content: center;
             .css-to7826{
               display: inline-block;
-              font-family: Poppins;
+              font-family: $font-family-base-web;
               width: auto;
               text-overflow: initial;
               max-width: 100%;
@@ -528,7 +543,7 @@ body {
             }
           }
           .form-group {
-            margin-bottom: 24px;
+            margin-bottom: $padding-top-block;
 
             .css-1awrbv6 {
               border: 0px solid rgb(255, 255, 255);
@@ -572,7 +587,7 @@ body {
                 transition: height 150ms linear 0ms;
 
                 .css-1ahpicv {
-                  font-family: Poppins;
+                  font-family: $font-family-base-web;
                   width: auto;
                   color: rgb(144, 144, 144);
                   font-size: $size-normal;
@@ -589,7 +604,7 @@ body {
 
               .css-3kwapb {
                 z-index: 1;
-                padding-top: 24px;
+                padding-top: $padding-top-block;
                 height: 50px;
                 border: 1px solid #ced4da;
                 border-radius: 7px !important;
@@ -625,7 +640,7 @@ body {
                 //display: block !important;
                 .css-1ma53cj {
                   display: inline-block;
-                  font-family: Poppins;
+                  font-family: $font-family-base-web;
                   width: auto;
                   text-overflow: initial;
                   max-width: 100%;
@@ -640,12 +655,12 @@ body {
 
           .css-th70o {
             font-weight: 600;
-            padding: 13px 24px;
+            padding: 13px $padding-top-block;
             border-radius: 8px;
             transition: all 500ms ease 0ms;
             cursor: pointer;
             border-width: 0px;
-            background: rgb(64, 181, 168);
+            background: $active-color;
             display: block;
             width: 100%;
             text-align: center;
@@ -657,7 +672,11 @@ body {
       }
     }
     .modal-header{
-
+      position: absolute;
+      top: 0;
+      right: 0;
+      border: none;
+      z-index: 9999;
     }
   }
 }
@@ -685,6 +704,12 @@ body {
 
 
 @media (max-width: 768px){
+  #main.tour-detail .container .css-1aanchd .css-jjshw6 .css-12n4x7u .css-33sija .service-tour .service-tour-tabs a{
+    display: block;
+    width: 50%;
+    font-size: $size-normal;
+    font-weight: $weight-highlight;
+  }
   .modal-css {
 
     max-height: 100%;
@@ -698,8 +723,9 @@ body {
         border-radius: 10px;
         background: rgb(255, 255, 255);
         border: unset;
+        height: 95vh;
         .modal-body{
-          padding: 0;
+          padding: 20px 20px !important;
           form{
             .css-iw5qv0{
               border: 0px solid rgb(255, 255, 255);
@@ -709,12 +735,12 @@ body {
               width: 100%;
               max-width: 100%;
               background: transparent;
-              margin-bottom: 24px;
+              margin-bottom: $padding-top-block;
               -webkit-box-pack: center;
               justify-content: center;
               .css-to7826{
                 display: inline-block;
-                font-family: Poppins;
+                font-family: $font-family-base-web;
                 width: auto;
                 text-overflow: initial;
                 max-width: 100%;
@@ -726,7 +752,7 @@ body {
               }
             }
             .form-group {
-              margin-bottom: 24px;
+              margin-bottom: $padding-top-block;
               .css-1awrbv6 {
                 border: 0px solid rgb(255, 255, 255);
                 display: flex;
@@ -769,7 +795,7 @@ body {
                   transition: height 150ms linear 0ms;
 
                   .css-1ahpicv {
-                    font-family: Poppins;
+                    font-family: $font-family-base-web;
                     width: auto;
                     color: rgb(144, 144, 144);
                     font-size: $size-normal;
@@ -786,7 +812,7 @@ body {
 
                 .css-3kwapb {
                   z-index: 1;
-                  padding-top: 24px;
+                  padding-top: $padding-top-block;
                   height: 50px;
                   border: 1px solid #ced4da;
                   border-radius: 7px !important;
@@ -822,7 +848,7 @@ body {
                   //display: block !important;
                   .css-1ma53cj {
                     display: inline-block;
-                    font-family: Poppins;
+                    font-family: $font-family-base-web;
                     width: auto;
                     text-overflow: initial;
                     max-width: 100%;
@@ -837,12 +863,12 @@ body {
 
             .css-th70o {
               font-weight: 600;
-              padding: 13px 24px;
+              padding: 13px $padding-top-block;
               border-radius: 8px;
               transition: all 500ms ease 0ms;
               cursor: pointer;
               border-width: 0px;
-              background: rgb(64, 181, 168);
+              background: $active-color;
               display: block;
               width: 100%;
               text-align: center;
@@ -859,4 +885,22 @@ body {
     }
   }
 
+  .lich-trinh{
+    .align-items-start{
+      .me-3{
+        display: none;
+      }
+    }
+  }
+
+  #main.tour-detail .container .css-1aanchd .css-jjshw6 .css-12n4x7u .css-33sija .css-1504npq iframe{
+    display: none;
+  }
+}
+
+
+@media only screen and (max-width: 576px) {
+  #main.tour-detail .container .css-1aanchd .css-jjshw6 .css-12n4x7u .css-33sija .css-1504npq>.tab-content .main-sightseeing{
+    min-height: unset !important;
+  }
 }

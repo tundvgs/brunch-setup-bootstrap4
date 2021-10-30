@@ -1,9 +1,9 @@
 @import "variable";
 
-#main.about-us{
-  .css-1utvz5n{
-    .css-wmt5k7{
-      max-width: 720px;
+#main.about-us {
+  .css-1utvz5n {
+    .css-wmt5k7 {
+      max-width: 1253px;
       border: 0 solid rgb(255, 255, 255);
       display: flex;
       flex: initial;
@@ -13,7 +13,7 @@
       align-items: center;
       -webkit-box-pack: center;
       justify-content: center;
-      font-family: PoppinsRegular;
+      font-family: $font-family-base-web;
       margin: 0;
       width: 100%;
       white-space: pre-line;
@@ -21,18 +21,20 @@
       font-size: $size-normal;
       font-weight: 400;
       line-height: 1.5;
-      .css-1w5npbh{
+
+      .css-1w5npbh {
         border: 0 solid rgb(255, 255, 255);
         display: flex;
         flex: initial;
         flex-flow: column wrap;
         width: 100%;
-        max-width: 100%;
         background: transparent;
-        margin-top: 2em;
-        .css-13sacn9{
+        margin: 32px auto 48px;
+        max-width: 720px;
+
+        .css-13sacn9 {
           display: inline-block;
-          font-family: Poppins;
+          font-family: $font-family-base-web;
           width: auto;
           text-overflow: initial;
           max-width: 100%;
@@ -40,15 +42,124 @@
           font-size: $size-title-popup;
           font-weight: $weight-highlight;
         }
+
         .css-sau84p {
           display: inline-block;
-          font-family: Poppins;
+          font-family: $font-family-base-web;
           width: auto;
           text-overflow: initial;
           max-width: 100%;
           overflow: visible;
-          margin-top: 1em;
+          margin-top: $padding-top-block;
           font-size: $size-normal;
+        }
+      }
+
+      .css-16stchx {
+        width: 100%;
+
+        .css-1jj0ssz {
+          border: 0px solid rgb(255, 255, 255);
+          display: flex;
+          flex: initial;
+          flex-flow: row nowrap;
+          width: 1584px;
+          max-width: 100%;
+          background: transparent;
+          -webkit-box-align: center;
+          align-items: center;
+          -webkit-box-pack: center;
+          justify-content: center;
+          margin-right: auto;
+          margin-left: auto;
+
+          .css-jui8y7 {
+            border: 0px solid rgb(255, 255, 255);
+            display: flex;
+            flex: initial;
+            flex-flow: column wrap;
+            width: calc(33.3% - 42px);
+            max-width: 100%;
+            background: transparent;
+            margin-left: 32px;
+            margin-right: 32px;
+            -webkit-box-align: center;
+            align-items: center;
+
+            .css-1hmfcq5 {
+              max-width: 100%;
+              height: 63px;
+              //width: 80px;
+              margin-bottom: 12px;
+              object-fit: cover;
+            }
+
+            .css-9seojr {
+              display: inline-block;
+              width: auto;
+              text-overflow: initial;
+              max-width: 100%;
+              overflow: visible;
+              text-align: center;
+
+              .css-1k47ti9 {
+                border: 0px solid rgb(255, 255, 255);
+                display: flex;
+                flex: initial;
+                flex-flow: row wrap;
+                width: auto;
+                max-width: 100%;
+                background: transparent;
+                margin-bottom: 8px;
+                -webkit-box-pack: center;
+                justify-content: center;
+
+                .css-4g10se {
+                  display: inline-block;
+                  width: auto;
+                  text-overflow: initial;
+                  max-width: 100%;
+                  overflow: visible;
+                  font-size: $size-normal;
+                  font-weight: $weight-highlight;
+                  line-height: 1.5;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 720px) {
+  .css-1jj0ssz {
+    flex-flow: column nowrap !important;
+    width: 1044px !important;
+    max-width: 100%;
+    .css-jui8y7 {
+      display: flex;
+      flex: initial;
+      flex-flow: column wrap;
+      width: 380px !important;
+      max-width: 100%;
+      background: transparent;
+      margin-left: 0px;
+      margin-right: 0px;
+      -webkit-box-align: center;
+      align-items: center;
+      .css-9seojr{
+        .css-1c097d5{
+          display: flex;
+          flex: initial;
+          flex-flow: row wrap;
+          width: auto;
+          max-width: 100%;
+          background: transparent;
+          margin-bottom: 48px;
+          -webkit-box-pack: center;
+          justify-content: center;
         }
       }
     }
