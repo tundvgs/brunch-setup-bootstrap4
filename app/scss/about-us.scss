@@ -3,7 +3,7 @@
 #main.about-us {
   .css-1utvz5n {
     .css-wmt5k7 {
-      max-width: 1253px;
+      // max-width: 1253px;
       border: 0 solid rgb(255, 255, 255);
       display: flex;
       flex: initial;
@@ -31,6 +31,7 @@
         background: transparent;
         margin: 32px auto 48px;
         max-width: 720px;
+        //  max-width: 1253px;
 
         .css-13sacn9 {
           display: inline-block;
@@ -41,6 +42,8 @@
           overflow: visible;
           font-size: $size-title-popup;
           font-weight: $weight-highlight;
+          text-align: center;
+          color: $color-text-highlight;
         }
 
         .css-sau84p {
@@ -55,6 +58,59 @@
         }
       }
 
+      .css-story {
+        background: #DCDCDC;
+
+        .text-story {
+          .text-story-span {
+            display: inline-block;
+            font-family: $font-family-base-web;
+            width: auto;
+            text-overflow: initial;
+            max-width: 100%;
+            overflow: visible;
+            margin-top: $padding-top-block;
+            font-size: $size-normal;
+            padding-left: 5px;
+            padding-right: 5px;
+          }
+
+          .text-story-header {
+            display: inline-block;
+            font-family: $font-family-base-web;
+            width: auto;
+            text-overflow: initial;
+            max-width: 100%;
+            overflow: visible;
+            font-size: $size-title-popup;
+            font-weight: $weight-highlight;
+            text-align: center;
+            color: $color-text-highlight;
+            padding-left: 5px;
+            padding-right: 5px;
+          }
+        }
+
+        .css-story-img {
+          padding-left: 10px;
+          padding-right: 10px;
+        }
+      }
+      .header-product-sevice {
+        .css-13sacn9 {
+          display: inline-block;
+          font-family: $font-family-base-web;
+          width: auto;
+          text-overflow: initial;
+          max-width: 100%;
+          overflow: visible;
+          font-size: $size-title-popup;
+          font-weight: $weight-highlight;
+          text-align: center;
+          color: $color-text-highlight;
+          margin-top: $padding-top-block;
+        }
+      }
       .css-16stchx {
         width: 100%;
 
@@ -138,6 +194,7 @@
     flex-flow: column nowrap !important;
     width: 1044px !important;
     max-width: 100%;
+
     .css-jui8y7 {
       display: flex;
       flex: initial;
@@ -149,8 +206,9 @@
       margin-right: 0px;
       -webkit-box-align: center;
       align-items: center;
-      .css-9seojr{
-        .css-1c097d5{
+
+      .css-9seojr {
+        .css-1c097d5 {
           display: flex;
           flex: initial;
           flex-flow: row wrap;
